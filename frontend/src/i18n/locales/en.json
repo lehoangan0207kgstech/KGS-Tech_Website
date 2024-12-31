@@ -1,8 +1,23 @@
 {
+  "header": {
     "home": "Home",
     "company": "Company",
     "business": "Business",
     "blog": "Blog",
     "welcome": "Welcome to our website!"
+  },
+
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutDescription": "KGS-Tech - Bridging Ideas with Technology.",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "followUs": "Follow Us",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "linkedin": "LinkedIn",
+    "companyName": "KGS-Tech",
+    "rightsReserved": "All Rights Reserved"
   }
-  
+}

@@ -1,7 +1,22 @@
 {
-  "home": "ホーム",
-  "company": "会社",
-  "business": "ビジネス",
-  "blog": "ブログ",
-  "welcome": "私たちのウェブサイトへようこそ！"
+  "header": {
+    "home": "ホーム",
+    "company": "会社",
+    "business": "ビジネス",
+    "blog": "ブログ",
+    "welcome": "私たちのウェブサイトへようこそ！"
+  },
+  "footer": {
+    "aboutUs": "私たちについて",
+    "aboutDescription": "KGS-Tech - アイデアとテクノロジーをつなぐ架け橋。",
+    "contact": "お問い合わせ",
+    "email": "メール",
+    "phone": "電話番号",
+    "followUs": "フォローする",
+    "facebook": "フェイスブック",
+    "twitter": "ツイッター",
+    "linkedin": "リンクトイン",
+    "companyName": "あなたの会社",
+    "rightsReserved": "全著作権所有"
+  }
 }
