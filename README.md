@@ -27,7 +27,7 @@ Docker
 
 # Truy cap vao container kgs_tech_app-1
 
-    docker exec -it kgs_tech-app-1 bash
+    docker exec -it kgs-tech_website-app-1  bash
 
 # Tao csdl 
 
