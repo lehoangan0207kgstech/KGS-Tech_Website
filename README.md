@@ -6,33 +6,33 @@ PHP 8.2
 Composer
 Docker
 
-#tạo nodemodule cho frontend
-1. cd frontend
+# Tao moi truong cho frontend
+    cd frontend
 
-2. npm install
+    npm install
 
-3. cd ..
+    cd ..
 
-#tạo môi trường cho backend
-1. cd backend
+# Tao moi truong cho backend
+    cd backend
 
-2. composer install
+    composer install
 
-3. tạo file .env
+    tạo file .env
 
-4. cd ..
+    cd ..
 
-#Chạy 
-1. docker-compose up -d
+# Chay container 
+    docker-compose up -d
 
-#Truy cap vao container kgs_tech_app-1
+# Truy cap vao container kgs_tech_app-1
 
-2. docker exec -it kgs_tech-app-1 bash
+    docker exec -it kgs_tech-app-1 bash
 
-#Tao csdl 
+# Tao csdl 
 
-3.php artisan migrate
+    php artisan migrate
 
-#Tao key
+# Tao key
 
-4.php artisan key:generate
+    php artisan key:generate
