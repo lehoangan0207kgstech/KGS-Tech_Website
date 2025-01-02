@@ -1,4 +1,8 @@
 {
+  "about" : {
+    "title": "THÔNG TIN CÔNG TY CHÚNG TÔI"
+  },
+
   "header": {
     "home": "Trang chủ",
     "company": "Công ty",
@@ -6,6 +10,7 @@
     "blog": "Blog",
     "welcome": "Chào mừng bạn đến với trang web của chúng tôi!"
   },
+
   "footer": {
     "aboutUs": "Về Chúng Tôi",
     "aboutDescription": "KGS-Tech - Kết nối ý tưởng với công nghệ.",
@@ -18,5 +23,87 @@
     "linkedin": "LinkedIn",
     "companyName": "KGS-Tech",
     "rightsReserved": "Bảo Lưu Mọi Quyền"
+  },
+
+  "features": {
+    "whyChoose": "Tại sao chọn KGS Tech?",
+    "strategicPartner": "Đối tác chiến lược",
+    "comprehensiveSolutions": "Giải pháp toàn diện",
+    "internationalWorkflow": "Quy trình chuẩn quốc tế",
+    "largeProjects": "Dự án lớn và phức tạp"
+  },
+
+  "blog": {
+    "title": "Tin Tức"
+  },
+  
+  "vision": {
+    "title": "Giá trị cốt lõi",
+    "description": "Con người và văn hóa là tài sản quan trọng của KGS-Tech.",
+    "subDescription": "Cùng nhau tạo ra giá trị tốt đẹp nhất để kiến tạo thành công",
+    "learnMore": "Tìm hiểu thêm",
+    "buttons": {
+      "challenge": "Đón nhận thách thức",
+      "partner": "Phát triển đối tác",
+      "integrity": "Giữ gìn chính trực"
+    },
+    "challenge": {
+      "title": "Đón nhận thách thức",
+      "image": "https://media.viez.vn/prod/2021/1/19/teamwork_la_gi_1_f4086b1e36.jpg",
+      "content": "Phương châm 'Đón nhận thách thức' đã gắn liền với VNG từ ngày thành lập."
+    },
+    "partner": {
+      "title": "Phát triển đối tác",
+      "image": "https://thumbs.dreamstime.com/z/mini-people-create-idea-to-success-business-illustration-vector-graphic-white-background-flat-cartoon-miniature-character-mini-123625493.jpg?w=768",
+      "content": "Chúng tôi xây dựng mối quan hệ đối tác bền vững dựa trên hợp tác và tin tưởng lẫn nhau."
+    },
+    "integrity": {
+      "title": "Giữ gìn chính trực",
+      "image": "https://thumbs.dreamstime.com/z/implementation-integration-innovations-business-process-tiny-engineers-cartoon-developers-work-system-gears-light-254829073.jpg?w=768",
+      "content": "Chính trực là nền tảng của mọi hoạt động tại VNG."
+    }
+  },
+
+  "milestones": {
+    "title": "Cột mốc chính",
+    "items": [
+      {
+        "year": "Bây giờ",
+        "title": "Từ Việt Nam vươn tầm thế giới",
+        "description": "Đưa công nghệ Việt Nam ra toàn cầu."
+      },
+      {
+        "year": "2025",
+        "title": "Thành công trong những dự án đầu tiên",
+        "description": "Duy trì phong độ và từng bước phát triển nhân tài."
+      },
+      {
+        "year": "2024",
+        "title": "Công ty thành lập",
+        "description": "Những bước đầu trong việc xây dựng công ty lớn mạnhmạnh."
+      }
+    ]
+  },
+
+  "leaders": {
+    "title": "Ban lãnh đạo cấp cao",
+    "list": [
+      {
+        "name": "Sumimoto",
+        "position": "Chủ tịch KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Yushi",
+        "position": "Phó Chủ tịch KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Hoàng Văn Kính",
+        "position": "Giám đốc điều hành KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      }
+    ]
   }
+
 }

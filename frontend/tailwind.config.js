@@ -12,9 +12,9 @@ export default {
         'notoSansJP': ['Noto Sans JP', 'sans-serif'],
       },
       colors: {
-        primary: '#1F2937',     
-        secondary: '#FFC470',   
-        accent: '#FFB000',  
+        primary: '#111827',     
+        secondary: '#F97316',   
+        accent: '#1F2937',  
       },
     },
   },

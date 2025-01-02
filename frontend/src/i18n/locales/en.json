@@ -1,4 +1,7 @@
 {
+  "about": {
+    "title": "ABOUT OUR COMPANY"
+  },
   "header": {
     "home": "Home",
     "company": "Company",
@@ -6,7 +9,6 @@
     "blog": "Blog",
     "welcome": "Welcome to our website!"
   },
-
   "footer": {
     "aboutUs": "About Us",
     "aboutDescription": "KGS-Tech - Bridging Ideas with Technology.",
@@ -19,5 +21,84 @@
     "linkedin": "LinkedIn",
     "companyName": "KGS-Tech",
     "rightsReserved": "All Rights Reserved"
+  },
+  "features": {
+    "whyChoose": "Why choose KGS Tech?",
+    "strategicPartner": "Strategic partner",
+    "comprehensiveSolutions": "Comprehensive solutions",
+    "internationalWorkflow": "International standard workflow",
+    "largeProjects": "Large and complex projects"
+  },
+  "blog": {
+    "title": "Blog"
+  },
+
+  "vision": {
+    "title": "Core Values",
+    "description": "People and culture are the most valuable assets of KGS-Tech.",
+    "subDescription": "Together, we create the best values to achieve success",
+    "learnMore": "Learn more",
+    "buttons": {
+      "challenge": "Embrace Challenges",
+      "partner": "Develop Partnerships",
+      "integrity": "Uphold Integrity"
+    },
+    "challenge": {
+      "title": "Embrace Challenges",
+      "image": "https://media.viez.vn/prod/2021/1/19/teamwork_la_gi_1_f4086b1e36.jpg",
+      "content": "The motto 'Embrace Challenges' has been with KGS-Tech since its founding."
+    },
+    "partner": {
+      "title": "Develop Partnerships",
+      "image": "https://thumbs.dreamstime.com/z/mini-people-create-idea-to-success-business-illustration-vector-graphic-white-background-flat-cartoon-miniature-character-mini-123625493.jpg?w=768",
+      "content": "We build sustainable partnerships based on cooperation and mutual trust."
+    },
+    "integrity": {
+      "title": "Uphold Integrity",
+      "image": "https://thumbs.dreamstime.com/z/implementation-integration-innovations-business-process-tiny-engineers-cartoon-developers-work-system-gears-light-254829073.jpg?w=768",
+      "content": "Integrity is the foundation of all activities at KGS-Tech."
+    }
+  },
+
+  "milestones": {
+    "title": "Key Milestones",
+    "items": [
+      {
+        "year": "Now",
+        "title": "From Vietnam to the World",
+        "description": "Taking Vietnamese technology to the global stage."
+      },
+      {
+        "year": "2025",
+        "title": "Success in Initial Projects",
+        "description": "Maintaining momentum and steadily developing talent."
+      },
+      {
+        "year": "2024",
+        "title": "Company Founded",
+        "description": "The first steps in building a strong company."
+      }
+    ]
+  },
+  
+  "leaders": {
+    "title": "Senior Leadership Team",
+    "list": [
+      {
+        "name": "Sumimoto",
+        "position": "Chairman of KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Yushi",
+        "position": "Vice Chairman of KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Hoang Van Kinh",
+        "position": "CEO of KGS-Tech",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      }
+    ]
   }
 }

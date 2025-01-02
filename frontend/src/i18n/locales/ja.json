@@ -1,4 +1,8 @@
 {
+  "about" : {
+    "title": "当社について"
+  },
+
   "header": {
     "home": "ホーム",
     "company": "会社",
@@ -6,6 +10,7 @@
     "blog": "ブログ",
     "welcome": "私たちのウェブサイトへようこそ！"
   },
+  
   "footer": {
     "aboutUs": "私たちについて",
     "aboutDescription": "KGS-Tech - アイデアとテクノロジーをつなぐ架け橋。",
@@ -18,5 +23,86 @@
     "linkedin": "リンクトイン",
     "companyName": "あなたの会社",
     "rightsReserved": "全著作権所有"
+  },
+
+  "features": {
+    "whyChoose": "KGS Tech を選ぶ理由",
+    "strategicPartner": "戦略的パートナー",
+    "comprehensiveSolutions": "包括的なソリューション",
+    "internationalWorkflow": "国際標準のワークフロー",
+    "largeProjects": "大規模で複雑なプロジェクト"
+  },
+
+  "blog": {
+    "title": "ブログ"
+  },
+
+  "vision": {
+    "title": "コアバリュー",
+    "description": "人と文化は、KGS-Techの最も価値ある資産です。",
+    "subDescription": "共に成功を築くために最高の価値を創造します",
+    "learnMore": "もっと詳しく知る",
+    "buttons": {
+      "challenge": "挑戦を受け入れる",
+      "partner": "パートナーシップの発展",
+      "integrity": "誠実さを守る"
+    },
+    "challenge": {
+      "title": "挑戦を受け入れる",
+      "image": "https://media.viez.vn/prod/2021/1/19/teamwork_la_gi_1_f4086b1e36.jpg",
+      "content": "『挑戦を受け入れる』というモットーは、KGS-Techの創立以来のものです。"
+    },
+    "partner": {
+      "title": "パートナーシップの発展",
+      "image": "https://thumbs.dreamstime.com/z/mini-people-create-idea-to-success-business-illustration-vector-graphic-white-background-flat-cartoon-miniature-character-mini-123625493.jpg?w=768",
+      "content": "私たちは協力と信頼に基づいた持続可能なパートナーシップを構築します。"
+    },
+    "integrity": {
+      "title": "誠実さを守る",
+      "image": "https://thumbs.dreamstime.com/z/implementation-integration-innovations-business-process-tiny-engineers-cartoon-developers-work-system-gears-light-254829073.jpg?w=768",
+      "content": "誠実さはKGS-Techのすべての活動の基盤です。"
+    }
+  },
+
+  "milestones": {
+    "title": "主要な節目",
+    "items": [
+      {
+        "year": "現在",
+        "title": "ベトナムから世界へ",
+        "description": "ベトナムの技術を世界舞台へ広げる。"
+      },
+      {
+        "year": "2025",
+        "title": "初期プロジェクトの成功",
+        "description": "勢いを保ち、着実に才能を育成する。"
+      },
+      {
+        "year": "2024",
+        "title": "会社設立",
+        "description": "強い会社を構築する最初のステップ。"
+      }
+    ]
+  },
+
+  "leaders": {
+    "title": "シニアリーダーシップチーム",
+    "list": [
+      {
+        "name": "Sumimoto",
+        "position": "KGS-Tech 会長",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Yushi",
+        "position": "KGS-Tech 副会長",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      },
+      {
+        "name": "Hoang Van Kinh",
+        "position": "KGS-Tech CEO",
+        "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
+      }
+    ]
   }
 }
