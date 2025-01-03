@@ -85,7 +85,7 @@ const Business = () => {
             <PageDownUp sections={["infoSection", "benefitSection", "formSection", "contactSection"]}/>
 
             {/* Information Section */}
-            <div id="infoSection" className="bg-gray-100 py-16">
+            <div id="infoSection" className="bg-gray-100 py-24">
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-6">
                     <div className="w-full md:w-1/2">
                         <img

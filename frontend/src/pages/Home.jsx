@@ -104,7 +104,7 @@ const Home = () => {
 
 
             {/* Why Choose Section */}
-            <div id="chooseSection" className="container mx-auto py-12 px-4">
+            <div id="chooseSection" className="container mx-auto py-24 px-4">
                 <h2 className="text-3xl font-extrabold text-center text-accent mb-8">
                     {t("features.whyChoose")}
                 </h2>
