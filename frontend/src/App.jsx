@@ -30,7 +30,7 @@ export default function App() {
         <div className="flex-1">
           <AnimatePresence mode="wait">
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/company" element={<Company />} />
               {/* Thêm các tuyến khác tại đây nếu cần */}
             </Routes>
