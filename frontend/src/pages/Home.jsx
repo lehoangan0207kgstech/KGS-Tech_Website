@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
+import PageDownUp from '../components/PageDownUp';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaHandshake, FaCogs, FaProjectDiagram, FaClipboardCheck } from "react-icons/fa";
@@ -8,47 +9,29 @@ import { FaHandshake, FaCogs, FaProjectDiagram, FaClipboardCheck } from "react-i
 const Home = () => {
     const { t, i18n } = useTranslation();
 
-    // const features = [
-    //     {
-    //         icon: <FaHandshake size={40} className="text-secondary" />,
-    //         title: t("features.strategicPartner"),
-    //     },
-    //     {
-    //         icon: <FaCogs size={40} className="text-secondary" />,
-    //         title: t("features.comprehensiveSolutions"),
-    //     },
-    //     {
-    //         icon: <FaClipboardCheck size={40} className="text-secondary" />,
-    //         title: t("features.internationalWorkflow"),
-    //     },
-    //     {
-    //         icon: <FaProjectDiagram size={40} className="text-secondary" />,
-    //         title: t("features.largeProjects"),
-    //     },
-    // ];
     const features = [
         {
-            title: t("features.onlineGame"),
+            description: t("features.strategicPartner"),
             icon: <FaHandshake size={40} className="text-secondary" />,
-            image: "https://example.com/online-game.jpg", // Đường dẫn ảnh
+            image: "https://images.spiceworks.com/wp-content/uploads/2021/12/14163643/working_culture_is_the_part_of_business_success_5d8cd5099e53a.jpg", // Đường dẫn ảnh
             bgColor: "bg-cover bg-center",
         },
         {
-            title: "ZALO & AI",
+            description: t("features.comprehensiveSolutions"),
             icon: <FaCogs size={40} className="text-secondary" />,
-            image: "https://example.com/fintech.jpg",
-            bgColor: "",
-        },
-        {
-            title: t("features.fintech"),
-            icon: <FaClipboardCheck size={40} className="text-secondary" />,
-            image: "https://example.com/fintech.jpg",
+            image: "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg",
             bgColor: "bg-cover bg-center",
         },
         {
-            title: t("features.digitalTransformation"),
+            description: t("features.internationalWorkflow"),
+            icon: <FaClipboardCheck size={40} className="text-secondary" />,
+            image: "https://smallbizclub.com/wp-content/uploads/2020/06/bigstock-Group-Of-Professional-Business-349068817.jpg",
+            bgColor: "bg-cover bg-center",
+        },
+        {
+            description: t("features.largeProjects"),
             icon: <FaProjectDiagram size={40} className="text-secondary" />,
-            image: "https://example.com/digital-transformation.jpg",
+            image: "https://purisconsulting.com/wp-content/uploads/2019/01/Company-Branding_team-work.png",
             bgColor: "bg-cover bg-center",
         },
     ];
@@ -109,19 +92,21 @@ const Home = () => {
                 <div className="relative z-10 flex flex-col items-start justify-center h-full pl-10 md:pl-20 text-white">
                     {/* Tiêu đề */}
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">KGS TECH</h1>
-                    <p className="text-lg md:text-2xl mb-6">Technology champion of Vietnam</p>
+                    <p className="text-lg md:text-2xl mb-6">{t("banner.description")}</p>
 
                     {/* Nút */}
                     <button className="flex items-center space-x-2 px-6 py-3 bg-secondary text-white font-medium text-lg rounded-lg hover:bg-orange-600">
-                        <span>{t("about.title")}</span>
+                        <span>{t("banner.title")}</span>
                     </button>
                 </div>
             </div>
+            <PageDownUp sections={["chooseSection", "blogSection"]} label="Roll" icon="⬇" />
+
 
             {/* Why Choose Section */}
-            <div className="container mx-auto py-12 px-4">
+            <div id="chooseSection" className="container mx-auto py-12 px-4">
                 <h2 className="text-3xl font-extrabold text-center text-accent mb-8">
-                    {t("features.title")}
+                    {t("features.whyChoose")}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
@@ -135,10 +120,21 @@ const Home = () => {
                             {/* Overlay */}
                             <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-60 transition-all duration-300"></div>
 
-                            {/* Nội dung */}
-                            <div className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
-                                <h3 className="text-lg font-bold uppercase text-center">
-                                    {feature.title}
+                            {/* Nội dung hiển thị trên PC */}
+                            <div className="hidden md:flex absolute inset-0 items-center justify-center text-white transition-all duration-300">
+                                <div
+                                    className="flex flex-col items-center justify-center text-center group-hover:scale-110 transition-transform duration-300"
+                                >
+                                    <div className="text-5xl mb-4">{feature.icon}</div> {/* Tăng kích thước icon */}
+                                    <h3 className="text-2xl font-extrabold uppercase">{feature.description}</h3>
+                                </div>
+                            </div>
+
+                            {/* Nội dung hiển thị trên mobile */}
+                            <div className="md:hidden absolute inset-0 flex flex-col items-center justify-center text-white">
+                                <div className="text-4xl mb-2">{feature.icon}</div>
+                                <h3 className="text-2xl font-extrabold uppercase text-center">
+                                    {feature.description}
                                 </h3>
                             </div>
 
@@ -151,9 +147,11 @@ const Home = () => {
                 </div>
             </div>
 
+
+
             {/* Blog Section */}
-            <div className="container mx-auto py-16 px-4">
-                <h2 className="text-3xl font-bold text-center mb-8">{t("blog.title")}</h2>
+            <div id="blogSection" className="container mx-auto py-16 px-4">
+                <h2 className="text-3xl font-extrabold text-center text-accent mb-8">{t("blog.title")}</h2>
                 <Slider {...sliderSettings}>
                     {blogPosts.map((post, index) => (
                         <div

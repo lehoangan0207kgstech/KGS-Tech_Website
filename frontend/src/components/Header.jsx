@@ -17,7 +17,7 @@ const Header = () => {
 
   // Chỉ áp dụng hiệu ứng cuộn trên trang Home
   useEffect(() => {
-    if (location.pathname === "/home") {
+    if (location.pathname === "/") {
       const handleScroll = () => {
         const scrollY = window.scrollY;
         const imageHeight = 600;
@@ -73,7 +73,7 @@ const Header = () => {
         <nav className="hidden md:flex gap-12">
           <ul className="flex gap-10">
             {[
-              { path: "/home", label: t("header.home") },
+              { path: "/", label: t("header.home") },
               { path: "/company", label: t("header.company") },
               { path: "/business", label: t("header.business") },
               { path: "/blog", label: t("header.blog") },
@@ -107,7 +107,7 @@ const Header = () => {
         <div className="md:hidden bg-gray-800 text-white w-full absolute top-full left-0 px-4 py-4">
           <nav className="flex flex-col gap-4">
             {[
-              { path: "/home", label: t("header.home") },
+              { path: "/", label: t("header.home") },
               { path: "/company", label: t("header.company") },
               { path: "/business", label: t("header.business") },
               { path: "/blog", label: t("header.blog") },

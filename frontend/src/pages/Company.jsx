@@ -30,8 +30,8 @@ const Company = () => {
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`px-6 py-3 border-2 rounded-full font-bold transition-all duration-300 ${activeTab === tab
-                                    ? "bg-secondary text-white border-secondary shadow-lg scale-105"
-                                    : "bg-white text-secondary border-secondary hover:bg-orange-100"
+                                ? "bg-secondary text-white border-secondary shadow-lg scale-105"
+                                : "bg-white text-secondary border-secondary hover:bg-orange-100"
                                 }`}
                         >
                             {t(`vision.buttons.${tab}`)}
@@ -66,22 +66,34 @@ const Company = () => {
             </div>
 
             {/* Cột mốc chính */}
-            <div className="container mx-auto px-40 py-12">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-center text-accent mb-6">{t("milestones.title")}</h2>
-                <div className="space-y-6">
+            <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-40 py-12">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-center text-accent mb-8">
+                    {t("milestones.title")}
+                </h2>
+                <div className="space-y-4">
                     {milestones.map((milestone, index) => (
-                        <div key={index} className="flex items-start space-x-4">
-                            <div className="bg-secondary w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-sm md:text-lg font-bold">
+                        <div
+                            key={index}
+                            className="flex items-center space-x-4 overflow-hidden"
+                        >
+                            {/* Năm */}
+                            <div className="bg-secondary flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-sm md:text-lg font-bold">
                                 {milestone.year}
                             </div>
-                            <div>
-                                <h3 className="text-lg md:text-xl font-bold">{milestone.title}</h3>
-                                <p className="text-gray-600 text-sm md:text-base">{milestone.description}</p>
+                            {/* Nội dung */}
+                            <div className="flex-1 overflow-hidden">
+                                <h3 className="text-sm md:text-lg font-bold truncate">
+                                    {milestone.title}
+                                </h3>
+                                <p className="text-gray-600 text-xs md:text-sm truncate">
+                                    {milestone.description}
+                                </p>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
+
 
             {/* Ban lãnh đạo cấp cao */}
             <div className="container mx-auto px-4 py-12">

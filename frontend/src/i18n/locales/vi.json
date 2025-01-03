@@ -1,8 +1,8 @@
 {
-  "about" : {
-    "title": "THÔNG TIN CÔNG TY CHÚNG TÔI"
+  "banner": {
+    "title": "THÔNG TIN CÔNG TY CHÚNG TÔI",
+    "description": "Công ty công nghệ hàng đầu Việt Nam"
   },
-
   "header": {
     "home": "Trang chủ",
     "company": "Công ty",
@@ -10,21 +10,18 @@
     "blog": "Blog",
     "welcome": "Chào mừng bạn đến với trang web của chúng tôi!"
   },
-
   "footer": {
     "aboutUs": "Về Chúng Tôi",
     "aboutDescription": "KGS-Tech - Kết nối ý tưởng với công nghệ.",
     "contact": "Liên Hệ",
-    "email": "Email",
-    "phone": "Số Điện Thoại",
+    "email": "Email : kgstech@gmail.comcom",
+    "phone": "Số Điện Thoại : 0362 *** ***",
     "followUs": "Theo Dõi Chúng Tôi",
     "facebook": "Facebook",
     "twitter": "Twitter",
     "linkedin": "LinkedIn",
-    "companyName": "KGS-Tech",
-    "rightsReserved": "Bảo Lưu Mọi Quyền"
+    "companyName": "KGS-Tech"
   },
-
   "features": {
     "whyChoose": "Tại sao chọn KGS Tech?",
     "strategicPartner": "Đối tác chiến lược",
@@ -32,11 +29,18 @@
     "internationalWorkflow": "Quy trình chuẩn quốc tế",
     "largeProjects": "Dự án lớn và phức tạp"
   },
-
   "blog": {
-    "title": "Tin Tức"
+    "title": "Tin Tức & Bài Viết",
+    "readMore": "Xem thêm",
+    "posts": [
+      {
+        "title": "Chuyển đổi số trong doanh nghiệp",
+        "date": "20/12/2024",
+        "description": "Cách các công ty sử dụng công nghệ để cải thiện hiệu suất và tối ưu hóa quy trình.",
+        "image": "https://via.placeholder.com/300"
+      }
+    ]
   },
-  
   "vision": {
     "title": "Giá trị cốt lõi",
     "description": "Con người và văn hóa là tài sản quan trọng của KGS-Tech.",
@@ -63,7 +67,6 @@
       "content": "Chính trực là nền tảng của mọi hoạt động tại VNG."
     }
   },
-
   "milestones": {
     "title": "Cột mốc chính",
     "items": [
@@ -84,7 +87,6 @@
       }
     ]
   },
-
   "leaders": {
     "title": "Ban lãnh đạo cấp cao",
     "list": [
@@ -100,10 +102,102 @@
       },
       {
         "name": "Hoàng Văn Kính",
-        "position": "Giám đốc điều hành KGS-Tech",
+        "position": "Fan Man Xanh",
         "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
       }
     ]
+  },
+  "bannerSlides": [
+    {
+      "title": "TỪ VIỆT NAM",
+      "subtitle": "VƯƠN TẦM THẾ GIỚI",
+      "placeholder": "Bạn đang tìm kiếm công việc gì?",
+      "image": "https://img.freepik.com/premium-photo/business-people-work-together_1082068-59548.jpg"
+    },
+    {
+      "title": "CƠ HỘI TỐT NHẤT",
+      "subtitle": "CHO TÀI NĂNG VIỆT",
+      "placeholder": "Hãy khám phá ngay!",
+      "image": "https://th.bing.com/th/id/OIP.IK240QCZ6WrZhr6-ceUt0gHaDt?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "slides": [
+    {
+      "title": "Chăm sóc sức khỏe, bảo hiểm",
+      "description": "Ngoài việc thực hiện đầy đủ chính sách bảo hiểm y tế theo chính sách Nhà nước, KGS Tech còn hỗ trợ nhân viên các gói bảo hiểm công tác, bảo hiểm tai nạn và khám sức khỏe định kỳ.",
+      "icon": "",
+      "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg"
+    },
+    {
+      "title": "Khuyến khích các hoạt động thể thao",
+      "description": "KGS Tech trang bị các phòng tập thể thao tại các văn phòng, mở các lớp học chuyên nghiệp, sự kiện thể thao đa dạng cho nhân viên tham gia để rèn luyện sức khỏe thể chất.",
+      "icon": "",
+      "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
+    }
+  ],
+  "contactItems": [
+    {
+      "icon": "📍",
+      "title": "KGS Tech - Home",
+      "link": ""
+    },
+    {
+      "icon": "🎥",
+      "title": "Life at KGS Tech",
+      "link": ""
+    },
+    {
+      "icon": "📘",
+      "title": "@KGSrecruitment",
+      "link": ""
+    },
+    {
+      "icon": "📞",
+      "title": "0362 *** ***",
+      "link": "tel:0362 *** ***"
+    },
+    {
+      "icon": "✉️",
+      "title": "kgstech@gmail.com",
+      "link": ""
+    },
+    {
+      "icon": "🔗",
+      "title": "KGS Tech Corporation",
+      "link": ""
+    }
+  ],
+  "business": {
+    "bestWorkplaceTitle": "Môi trường làm việc tốt nhất",
+    "benefitTitle": "Làm việc tại KGS TECH có gì hấp dẫn ?",
+    "benefitsDescription": "Phúc lợi",
+    "contactUsTitle": "Hãy liên lạc với chúng tôi",
+    "contactUsSubtitle": "Chúng tôi luôn lắng nghe bạn",
+    "about": {
+      "title": "Giới thiệu",
+      "description": "Chúng tôi tự hào là một trong những doanh nghiệp hàng đầu trong lĩnh vực công nghệ, mang đến môi trường làm việc lý tưởng với những giá trị bền vững."
+    },
+    "history": {
+      "title": "Lịch sử phát triển",
+      "description": "Kể từ khi thành lập, chúng tôi đã không ngừng đổi mới và mở rộng, trở thành một tổ chức có tầm ảnh hưởng lớn trong ngành công nghệ."
+    },
+    "life": {
+      "title": "Cuộc sống tại nơi làm việc",
+      "description": "Tại đây, chúng tôi khuyến khích sự sáng tạo, phát triển cá nhân và xây dựng một cộng đồng gắn kết, nơi mọi người đều có cơ hội tỏa sáng."
+    },
+    "values": {
+      "title": "Giá trị cốt lõi",
+      "items": [
+        "Đổi mới liên tục và sáng tạo.",
+        "Chính trực trong mọi hoạt động.",
+        "Cam kết chất lượng và dịch vụ tốt nhất."
+      ]
+    }
+  },
+  "contactForm": {
+    "title": "Tạo thông báo việc làm",
+    "description": "Nhận thông báo việc làm mới nhất.",
+    "placeholder": "Nhập địa chỉ email",
+    "buttonText": "ĐĂNG KÝ"
   }
-
 }

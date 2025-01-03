@@ -9,6 +9,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Company from './pages/Company';
+import Business from  './pages/Business';
+import Blog from  './pages/Blog';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence } from 'framer-motion';
 
@@ -32,6 +34,8 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/company" element={<Company />} />
+              <Route path="/business" element={<Business />} />
+              <Route path="/blog" element={<Blog />} />
               {/* Thêm các tuyến khác tại đây nếu cần */}
             </Routes>
           </AnimatePresence>

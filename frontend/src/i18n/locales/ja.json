@@ -1,8 +1,8 @@
 {
-  "about" : {
-    "title": "当社について"
+  "banner": {
+    "title": "当社について",
+    "description": "ベトナムの大手テクノロジー企業"
   },
-
   "header": {
     "home": "ホーム",
     "company": "会社",
@@ -10,21 +10,18 @@
     "blog": "ブログ",
     "welcome": "私たちのウェブサイトへようこそ！"
   },
-  
   "footer": {
     "aboutUs": "私たちについて",
     "aboutDescription": "KGS-Tech - アイデアとテクノロジーをつなぐ架け橋。",
     "contact": "お問い合わせ",
-    "email": "メール",
-    "phone": "電話番号",
+    "email": "メール：　: kgstech@gmail.com",
+    "phone": "電話番号：　0362 *** ***",
     "followUs": "フォローする",
     "facebook": "フェイスブック",
     "twitter": "ツイッター",
     "linkedin": "リンクトイン",
-    "companyName": "あなたの会社",
-    "rightsReserved": "全著作権所有"
+    "companyName": "あなたの会社"
   },
-
   "features": {
     "whyChoose": "KGS Tech を選ぶ理由",
     "strategicPartner": "戦略的パートナー",
@@ -32,11 +29,18 @@
     "internationalWorkflow": "国際標準のワークフロー",
     "largeProjects": "大規模で複雑なプロジェクト"
   },
-
   "blog": {
-    "title": "ブログ"
+    "title": "ニュースと記事",
+    "readMore": "もっと見る",
+    "posts": [
+      {
+        "title": "ビジネスにおけるデジタルトランスフォーメーション",
+        "date": "2024年12月20日",
+        "description": "企業がテクノロジーを活用してパフォーマンスを向上させ、プロセスを最適化する方法。",
+        "image": "https://via.placeholder.com/300"
+      }
+    ]
   },
-
   "vision": {
     "title": "コアバリュー",
     "description": "人と文化は、KGS-Techの最も価値ある資産です。",
@@ -63,7 +67,6 @@
       "content": "誠実さはKGS-Techのすべての活動の基盤です。"
     }
   },
-
   "milestones": {
     "title": "主要な節目",
     "items": [
@@ -84,7 +87,6 @@
       }
     ]
   },
-
   "leaders": {
     "title": "シニアリーダーシップチーム",
     "list": [
@@ -100,9 +102,102 @@
       },
       {
         "name": "Hoang Van Kinh",
-        "position": "KGS-Tech CEO",
+        "position": "Manchester City Fan",
         "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
       }
     ]
+  },
+  "bannerSlides": [
+    {
+      "title": "ベトナムから",
+      "subtitle": "世界へ",
+      "placeholder": "どの仕事を探していますか？",
+      "image": "https://img.freepik.com/premium-photo/business-people-work-together_1082068-59548.jpg"
+    },
+    {
+      "title": "最高のチャンス",
+      "subtitle": "ベトナムの才能へ",
+      "placeholder": "今すぐ探してみよう！",
+      "image": "https://th.bing.com/th/id/OIP.IK240QCZ6WrZhr6-ceUt0gHaDt?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "slides": [
+    {
+      "title": "健康管理と保険",
+      "description": "国の健康保険制度を完全に実施するだけでなく、KGS Techはビジネス保険、事故保険、定期健康診断も従業員に提供しています。",
+      "icon": "",
+      "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg"
+    },
+    {
+      "title": "スポーツ活動の推奨",
+      "description": "KGS Techはオフィスにスポーツ施設を設置し、専門的なクラスや多様なスポーツイベントを開催して、従業員が健康を増進できるようサポートしています。",
+      "icon": "",
+      "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
+    }
+  ],
+  "contactItems": [
+    {
+      "icon": "📍",
+      "title": "KGS Tech - ホーム",
+      "link": ""
+    },
+    {
+      "icon": "🎥",
+      "title": "KGS Techでの生活",
+      "link": ""
+    },
+    {
+      "icon": "📘",
+      "title": "@KGSrecruitment",
+      "link": ""
+    },
+    {
+      "icon": "📞",
+      "title": "0362 *** ***",
+      "link": "tel:0362 *** ***"
+    },
+    {
+      "icon": "✉️",
+      "title": "kgstech@gmail.com",
+      "link": ""
+    },
+    {
+      "icon": "🔗",
+      "title": "KGS Tech 株式会社",
+      "link": ""
+    }
+  ],
+  "business": {
+    "bestWorkplaceTitle": "最高の職場",
+    "benefitTitle": "KGS TECHで働く魅力は？",
+    "benefitsDescription": "福利厚生",
+    "contactUsTitle": "お問い合わせ",
+    "contactUsSubtitle": "私たちはあなたの声をお聞きします",
+    "about": {
+      "title": "会社概要",
+      "description": "私たちは、持続可能な価値を備えた理想的な労働環境を提供する技術分野のリーダー企業であることを誇りに思っています。"
+    },
+    "history": {
+      "title": "発展の歴史",
+      "description": "設立以来、絶え間ない革新と拡大を続け、技術産業で影響力のある組織となりました。"
+    },
+    "life": {
+      "title": "職場での生活",
+      "description": "ここでは、創造性、個人の成長を奨励し、すべての人が輝ける機会を持つ、結束力のあるコミュニティを構築しています。"
+    },
+    "values": {
+      "title": "コアバリュー",
+      "items": [
+        "継続的な革新と創造性。",
+        "すべての運営における誠実さ。",
+        "最高の品質とサービスを提供するというコミットメント。"
+      ]
+    }
+  },
+  "contactForm": {
+    "title": "求人通知を作成する",
+    "description": "最新の求人通知を受け取る。",
+    "placeholder": "メールアドレスを入力してください",
+    "buttonText": "登録"
   }
 }

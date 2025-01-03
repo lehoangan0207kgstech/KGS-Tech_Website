@@ -1,6 +1,7 @@
 {
-  "about": {
-    "title": "ABOUT OUR COMPANY"
+  "banner": {
+    "title": "ABOUT OUR COMPANY",
+    "description": "Technology champion of Vietnam"
   },
   "header": {
     "home": "Home",
@@ -11,16 +12,15 @@
   },
   "footer": {
     "aboutUs": "About Us",
-    "aboutDescription": "KGS-Tech - Bridging Ideas with Technology.",
+    "aboutDescription": "KGS-Tech - Connecting ideas with technology.",
     "contact": "Contact",
-    "email": "Email",
-    "phone": "Phone",
+    "email": "Email: kgstech@gmail.com",
+    "phone": "Phone: 0362 *** ***",
     "followUs": "Follow Us",
     "facebook": "Facebook",
     "twitter": "Twitter",
     "linkedin": "LinkedIn",
-    "companyName": "KGS-Tech",
-    "rightsReserved": "All Rights Reserved"
+    "companyName": "KGS-Tech"
   },
   "features": {
     "whyChoose": "Why choose KGS Tech?",
@@ -30,9 +30,17 @@
     "largeProjects": "Large and complex projects"
   },
   "blog": {
-    "title": "Blog"
+    "title": "News & Articles",
+    "readMore": "Read More",
+    "posts": [
+      {
+        "title": "Digital Transformation in Business",
+        "date": "20/12/2024",
+        "description": "How companies leverage technology to enhance performance and optimize processes.",
+        "image": "https://via.placeholder.com/300"
+      }
+    ]
   },
-
   "vision": {
     "title": "Core Values",
     "description": "People and culture are the most valuable assets of KGS-Tech.",
@@ -59,7 +67,6 @@
       "content": "Integrity is the foundation of all activities at KGS-Tech."
     }
   },
-
   "milestones": {
     "title": "Key Milestones",
     "items": [
@@ -80,7 +87,6 @@
       }
     ]
   },
-  
   "leaders": {
     "title": "Senior Leadership Team",
     "list": [
@@ -96,9 +102,102 @@
       },
       {
         "name": "Hoang Van Kinh",
-        "position": "CEO of KGS-Tech",
+        "position": "マンチェスター・シティFan",
         "image": "https://th.bing.com/th/id/R.d452f185bf5464b5e6e0311703c5251e?rik=aTEFZ9%2bfre6Wxg&riu=http%3a%2f%2fabhedanandamahavidyalaya.ac.in%2fwp-content%2fthemes%2ftwentytwentyone%2fimages%2fp.jpg&ehk=VrFBS%2bWXTOTiDFK3pOJIsJQ08eMK5tlPVlyMa74fqF4%3d&risl=&pid=ImgRaw&r=0"
       }
     ]
+  },
+  "bannerSlides": [
+    {
+      "title": "FROM VIETNAM",
+      "subtitle": "REACHING OUT TO THE WORLD",
+      "placeholder": "What job are you looking for?",
+      "image": "https://img.freepik.com/premium-photo/business-people-work-together_1082068-59548.jpg"
+    },
+    {
+      "title": "BEST OPPORTUNITIES",
+      "subtitle": "FOR VIETNAMESE TALENTS",
+      "placeholder": "Explore now!",
+      "image": "https://th.bing.com/th/id/OIP.IK240QCZ6WrZhr6-ceUt0gHaDt?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "slides": [
+    {
+      "title": "Health Care and Insurance",
+      "description": "In addition to fully implementing the state's health insurance policies, KGS Tech also supports employees with business insurance, accident insurance, and periodic health check-ups.",
+      "icon": "",
+      "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg"
+    },
+    {
+      "title": "Encouraging Sports Activities",
+      "description": "KGS Tech equips sports facilities in offices, organizes professional classes, and diverse sports events for employees to enhance their physical health.",
+      "icon": "",
+      "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
+    }
+  ],
+  "contactItems": [
+    {
+      "icon": "📍",
+      "title": "KGS Tech - Home",
+      "link": ""
+    },
+    {
+      "icon": "🎥",
+      "title": "Life at KGS Tech",
+      "link": ""
+    },
+    {
+      "icon": "📘",
+      "title": "@KGSrecruitment",
+      "link": ""
+    },
+    {
+      "icon": "📞",
+      "title": "0362 *** ***",
+      "link": "tel:0362 *** ***"
+    },
+    {
+      "icon": "✉️",
+      "title": "kgstech@gmail.com",
+      "link": ""
+    },
+    {
+      "icon": "🔗",
+      "title": "KGS Tech Corporation",
+      "link": ""
+    }
+  ],
+  "business": {
+    "bestWorkplaceTitle": "The Best Workplace",
+    "benefitTitle": "What Makes Working at KGS TECH Exciting?",
+    "benefitsDescription": "Benefits",
+    "contactUsTitle": "Contact Us",
+    "contactUsSubtitle": "We are here to listen",
+    "about": {
+      "title": "About Us",
+      "description": "We are proud to be one of the leading companies in the technology sector, providing an ideal work environment with sustainable values."
+    },
+    "history": {
+      "title": "Our Journey",
+      "description": "Since its inception, we have continuously innovated and expanded, becoming an influential organization in the technology industry."
+    },
+    "life": {
+      "title": "Life at Work",
+      "description": "Here, we encourage creativity, personal growth, and build a cohesive community where everyone has the opportunity to shine."
+    },
+    "values": {
+      "title": "Core Values",
+      "items": [
+        "Continuous innovation and creativity.",
+        "Integrity in every operation.",
+        "Commitment to quality and excellent service."
+      ]
+    }
+  },
+  "contactForm": {
+    "title": "Create Job Alerts",
+    "description": "Receive the latest job notifications.",
+    "placeholder": "Enter your email address",
+    "buttonText": "SUBSCRIBE"
   }
 }
