@@ -11,16 +11,18 @@
     "welcome": "私たちのウェブサイトへようこそ！"
   },
   "footer": {
-    "aboutUs": "私たちについて",
-    "aboutDescription": "KGS-Tech - アイデアとテクノロジーをつなぐ架け橋。",
-    "contact": "お問い合わせ",
-    "email": "メール：　: kgstech@gmail.com",
-    "phone": "電話番号：　0362 *** ***",
-    "followUs": "フォローする",
-    "facebook": "フェイスブック",
-    "twitter": "ツイッター",
-    "linkedin": "リンクトイン",
-    "companyName": "あなたの会社"
+    "about_us": "当社について",
+    "store": "ビジネス",
+    "blog_kgs": "KGS Techについて",
+    "company_address": "会社住所",
+    "address_detail": "住所: 40番地, 16番通り, An Phu, Thu Duc市, ホーチミン市",
+    "email_support": "カスタマーサポートメール",
+    "hotline_support": "カスタマーサポートホットライン",
+    "newsletter_title": "KGS TECHからの最新情報を受け取る",
+    "newsletter_description": "メールアドレスを残してください。KGS Techからの最新ニュースをお届けします。",
+    "email_placeholder": "メールアドレスを入力してください...",
+    "send_button": "送信",
+    "copyright": "この著作権はKGS Tech株式会社に属します"
   },
   "features": {
     "whyChoose": "KGS Tech を選ぶ理由",
@@ -73,16 +75,19 @@
       {
         "year": "現在",
         "title": "ベトナムから世界へ",
+        "image": "https://transforming.com/wp-content/uploads/2020/05/bigstock-Group-Of-Professional-Business-349068817-1-scaled.jpg",
         "description": "ベトナムの技術を世界舞台へ広げる。"
       },
       {
         "year": "2025",
         "title": "初期プロジェクトの成功",
+        "image": "https://th.bing.com/th/id/R.cca88c9d9851a5da092fa1964e42b04d?rik=eUbuoBwPBMyNIQ&pid=ImgRaw&r=0",
         "description": "勢いを保ち、着実に才能を育成する。"
       },
       {
         "year": "2024",
         "title": "会社設立",
+        "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg",
         "description": "強い会社を構築する最初のステップ。"
       }
     ]

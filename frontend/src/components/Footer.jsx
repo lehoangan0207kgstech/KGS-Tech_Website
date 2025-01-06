@@ -1,70 +1,52 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  // Chuyển đổi ngôn ngữ
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-8">
-        {/* Responsive Flexbox Grid */}
-        <div className="flex flex-col md:flex-row md:justify-between items-center text-center md:text-left gap-8">
-          {/* About Section */}
-          <div className="md:flex-1">
-            <h4 className="text-lg font-semibold mb-4">{t("footer.aboutUs")}</h4>
-            <p className="text-sm leading-relaxed">{t("footer.aboutDescription")}</p>
-          </div>
+    <footer className="bg-black text-white py-10">
+      <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center sm:text-left">
+        {/* Cột 1 */}
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">{t("footer.about_us")}</h3>
+          <ul className="space-y-2">
+            <li><a href="/business" className="hover:underline">{t("footer.store")}</a></li>
+            <li><a href="/blog" className="hover:underline">{t("footer.blog_kgs")}</a></li>
+          </ul>
+        </div>
 
-          {/* Contact Section */}
-          <div className="md:flex-1">
-            <h4 className="text-lg font-semibold mb-4">{t("footer.contact")}</h4>
-            <p className="text-sm leading-relaxed">{t("footer.email")}</p>
-            <p className="text-sm leading-relaxed">{t("footer.phone")}</p>
-          </div>
+        {/* Cột 2 */}
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">{t("footer.company_address")}</h3>
+          <p className="text-sm mb-2">{t("footer.address_detail")}</p>
+          <p className="text-sm mb-2">{t("footer.email_support")}: <a href="mailto:support@kgstech.com" className="hover:underline">support@kgstech.com</a></p>
+          <p className="text-sm">{t("footer.hotline_support")}: 0362 *** ***</p>
+        </div>
 
-          {/* Social Media Section */}
-          <div className="md:flex-1">
-            <h4 className="text-lg font-semibold mb-4">{t("footer.followUs")}</h4>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="https://facebook.com"
-                  className="hover:underline text-sm leading-relaxed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("footer.facebook")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com"
-                  className="hover:underline text-sm leading-relaxed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("footer.twitter")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com"
-                  className="hover:underline text-sm leading-relaxed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("footer.linkedin")}
-                </a>
-              </li>
-            </ul>
+        {/* Cột 3 */}
+        <div>
+          <h3 className="text-lg sm:text-xl font-bold mb-4">{t("footer.newsletter_title")}</h3>
+          <div className="flex justify-center sm:justify-start space-x-4 mb-4">
+            <a href="#" className="text-white text-xl sm:text-2xl hover:text-gray-400"><i className="fab fa-facebook"></i></a>
+            <a href="#" className="text-white text-xl sm:text-2xl hover:text-gray-400"><i className="fab fa-youtube"></i></a>
+            <a href="#" className="text-white text-xl sm:text-2xl hover:text-gray-400"><i className="fab fa-tiktok"></i></a>
+          </div>
+          <p className="text-sm mb-4">{t("footer.newsletter_description")}</p>
+          <div className="flex items-center justify-center sm:justify-start">
+            <input
+              type="email"
+              placeholder={t("footer.email_placeholder")}
+              className="flex-1 px-4 py-2 text-black rounded-l-lg focus:outline-none"
+            />
+            <button className="bg-white text-black px-4 py-2 rounded-r-lg hover:bg-gray-300">{t("footer.send_button")}</button>
           </div>
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="bg-gray-950 text-center py-4">
-        <p className="text-sm">&copy;2024 Create By Hoang An KGS-Tech</p>
+      {/* Dòng bản quyền */}
+      <div className="text-center mt-8 border-t border-gray-700 pt-4">
+        <p className="text-sm">©2024 {t("footer.copyright")}</p>
       </div>
     </footer>
   );

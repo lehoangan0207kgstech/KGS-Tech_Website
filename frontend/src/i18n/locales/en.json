@@ -4,23 +4,25 @@
     "description": "Technology champion of Vietnam"
   },
   "header": {
-    "home": "Home",
-    "company": "Company",
-    "business": "Business",
-    "blog": "Blog",
+    "home": "HOME",
+    "company": "COMPANY",
+    "business": "BUSINESS",
+    "blog": "BLOG",
     "welcome": "Welcome to our website!"
   },
   "footer": {
-    "aboutUs": "About Us",
-    "aboutDescription": "KGS-Tech - Connecting ideas with technology.",
-    "contact": "Contact",
-    "email": "Email: kgstech@gmail.com",
-    "phone": "Phone: 0362 *** ***",
-    "followUs": "Follow Us",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "linkedin": "LinkedIn",
-    "companyName": "KGS-Tech"
+    "about_us": "ABOUT US",
+    "store": "Business",
+    "blog_kgs": "Blog of KGS Tech",
+    "company_address": "COMPANY ADDRESS",
+    "address_detail": "Address: No. 40, Street 16, An Phu, Thu Duc City, Ho Chi Minh City",
+    "email_support": "CUSTOMER SUPPORT EMAIL",
+    "hotline_support": "CUSTOMER SUPPORT HOTLINE",
+    "newsletter_title": "GET NEWS FROM KGS TECH",
+    "newsletter_description": "Please leave your email address, we will update you with the latest news from KGS Tech",
+    "email_placeholder": "Enter your email...",
+    "send_button": "Send",
+    "copyright": "this copyright belongs to KGS Tech"
   },
   "features": {
     "whyChoose": "Why choose KGS Tech?",
@@ -73,16 +75,19 @@
       {
         "year": "Now",
         "title": "From Vietnam to the World",
+        "image": "https://transforming.com/wp-content/uploads/2020/05/bigstock-Group-Of-Professional-Business-349068817-1-scaled.jpg",
         "description": "Taking Vietnamese technology to the global stage."
       },
       {
         "year": "2025",
         "title": "Success in Initial Projects",
+        "image": "https://th.bing.com/th/id/R.cca88c9d9851a5da092fa1964e42b04d?rik=eUbuoBwPBMyNIQ&pid=ImgRaw&r=0",
         "description": "Maintaining momentum and steadily developing talent."
       },
       {
         "year": "2024",
         "title": "Company Founded",
+        "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg",
         "description": "The first steps in building a strong company."
       }
     ]

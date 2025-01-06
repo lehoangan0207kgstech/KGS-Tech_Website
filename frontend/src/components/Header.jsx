@@ -42,17 +42,17 @@ const Header = () => {
         headerStyle === "transparent" ? "bg-transparent text-white" : "bg-primary text-white shadow-md"
       }`}
     >
-      <div className="flex justify-between items-center px-4 py-3 md:px-12 md:py-4">
+      <div className="flex justify-between items-center px-3 py-3 md:px-8 md:py-4">
         {/* Mobile - Nút mở menu */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden text-lg"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <CloseOutlined /> : <MenuOutlined />}
         </button>
 
         {/* Logo */}
-        <div className="text-xl md:text-4xl font-extrabold tracking-wide text-center flex-grow md:flex-grow-0">
+        <div className="text-base md:text-xl font-bold tracking-wide text-center flex-grow md:flex-grow-0">
           <Link to="/home">KGS-Tech</Link>
         </div>
 
@@ -61,7 +61,7 @@ const Header = () => {
           <select
             value={language}
             onChange={(e) => handleLanguageChange(e.target.value)}
-            className="bg-white text-gray-800 rounded-lg px-3 py-1 border shadow-md focus:outline-none"
+            className="bg-white text-gray-800 rounded-lg px-2 py-1 border shadow-md focus:outline-none"
           >
             <option value="vi">🇻🇳</option>
             <option value="en">🇺🇸</option>
@@ -70,8 +70,8 @@ const Header = () => {
         </div>
 
         {/* Menu Desktop */}
-        <nav className="hidden md:flex gap-12">
-          <ul className="flex gap-10">
+        <nav className="hidden md:flex gap-8">
+          <ul className="flex gap-8">
             {[
               { path: "/", label: t("header.home") },
               { path: "/company", label: t("header.company") },
@@ -80,7 +80,7 @@ const Header = () => {
             ].map((menuItem, index) => (
               <li
                 key={index}
-                className="hover:text-secondary font-semibold text-lg md:text-xl"
+                className="hover:text-secondary font-medium text-sm md:text-base"
               >
                 <Link to={menuItem.path}>{menuItem.label}</Link>
               </li>
@@ -93,7 +93,7 @@ const Header = () => {
           <select
             value={language}
             onChange={(e) => handleLanguageChange(e.target.value)}
-            className="bg-white text-gray-800 rounded-lg px-3 py-1 border shadow-md focus:outline-none"
+            className="bg-white text-gray-800 rounded-lg px-2 py-1 border shadow-md focus:outline-none"
           >
             <option value="vi">🇻🇳 Tiếng Việt</option>
             <option value="en">🇺🇸 English</option>
@@ -104,8 +104,8 @@ const Header = () => {
 
       {/* Menu Mobile */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-800 text-white w-full absolute top-full left-0 px-4 py-4">
-          <nav className="flex flex-col gap-4">
+        <div className="md:hidden bg-gray-800 text-white w-full absolute top-full left-0 px-3 py-3">
+          <nav className="flex flex-col gap-3">
             {[
               { path: "/", label: t("header.home") },
               { path: "/company", label: t("header.company") },
@@ -115,7 +115,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={menuItem.path}
-                className="hover:text-orange-400"
+                className="hover:text-orange-400 text-sm"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {menuItem.label}

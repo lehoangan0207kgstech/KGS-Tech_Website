@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Milestones from "../components/Milestones";
 
 const Company = () => {
     const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState("challenge");
 
-    const milestones = t("milestones.items", { returnObjects: true }) || [];
+    const milestonesData = t("milestones.items", { returnObjects: true }) || [];
     const leaders = t("leaders.list", { returnObjects: true }) || [];
 
     return (
@@ -52,7 +53,7 @@ const Company = () => {
 
                     {/* Nội dung văn bản */}
                     <div>
-                        <h2 className="text-xl md:text-2xl font-extrabold mb-4 text-orange-500">
+                        <h2 className="text-xl md:text-2xl font-extrabold mb-4 text-secondary">
                             {t(`vision.${activeTab}.title`)}
                         </h2>
                         <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
@@ -66,33 +67,7 @@ const Company = () => {
             </div>
 
             {/* Cột mốc chính */}
-            <div className="container mx-auto px-4 sm:px-8 md:px-16 lg:px-40 py-12">
-                <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-center text-accent mb-8">
-                    {t("milestones.title")}
-                </h2>
-                <div className="space-y-4">
-                    {milestones.map((milestone, index) => (
-                        <div
-                            key={index}
-                            className="flex items-center space-x-4 overflow-hidden"
-                        >
-                            {/* Năm */}
-                            <div className="bg-secondary flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center text-white text-sm md:text-lg font-bold">
-                                {milestone.year}
-                            </div>
-                            {/* Nội dung */}
-                            <div className="flex-1 overflow-hidden">
-                                <h3 className="text-sm md:text-lg font-bold truncate">
-                                    {milestone.title}
-                                </h3>
-                                <p className="text-gray-600 text-xs md:text-sm truncate">
-                                    {milestone.description}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <Milestones milestones={milestonesData} />
 
 
             {/* Ban lãnh đạo cấp cao */}

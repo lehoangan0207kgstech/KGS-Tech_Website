@@ -4,23 +4,25 @@
     "description": "Công ty công nghệ hàng đầu Việt Nam"
   },
   "header": {
-    "home": "Trang chủ",
-    "company": "Công ty",
-    "business": "Dịch vụ",
-    "blog": "Blog",
+    "home": "TRANG CHỦ",
+    "company": "CÔNG TY",
+    "business": "DỊCH VỤ",
+    "blog": "TIN TỨC",
     "welcome": "Chào mừng bạn đến với trang web của chúng tôi!"
   },
   "footer": {
-    "aboutUs": "Về Chúng Tôi",
-    "aboutDescription": "KGS-Tech - Kết nối ý tưởng với công nghệ.",
-    "contact": "Liên Hệ",
-    "email": "Email : kgstech@gmail.comcom",
-    "phone": "Số Điện Thoại : 0362 *** ***",
-    "followUs": "Theo Dõi Chúng Tôi",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "linkedin": "LinkedIn",
-    "companyName": "KGS-Tech"
+    "about_us": "VỀ CHÚNG TÔI",
+    "store": "Dịch vụ",
+    "blog_kgs": "Tin tức KGS Tech",
+    "company_address": "ĐỊA CHỈ CÔNG TY",
+    "address_detail": "Địa chỉ: Số 40, Đường 16, An Phú, TP Thủ Đức, TP Hồ Chí Minh",
+    "email_support": "EMAIL HỖ TRỢ KHÁCH HÀNG",
+    "hotline_support": "HOTLINE HỖ TRỢ KHÁCH HÀNG",
+    "newsletter_title": "NHẬN THÔNG TIN TỪ KGS TECH",
+    "newsletter_description": "Xin vui lòng để lại địa chỉ email, chúng tôi sẽ cập nhật những tin tức mới nhất của KGS Tech",
+    "email_placeholder": "Nhập email của bạn...",
+    "send_button": "Gửi",
+    "copyright": "bản quyền này thuộc về Công Ty Cổ Phần KGS Tech"
   },
   "features": {
     "whyChoose": "Tại sao chọn KGS Tech?",
@@ -73,17 +75,20 @@
       {
         "year": "Bây giờ",
         "title": "Từ Việt Nam vươn tầm thế giới",
+        "image": "https://transforming.com/wp-content/uploads/2020/05/bigstock-Group-Of-Professional-Business-349068817-1-scaled.jpg",
         "description": "Đưa công nghệ Việt Nam ra toàn cầu."
       },
       {
         "year": "2025",
         "title": "Thành công trong những dự án đầu tiên",
+        "image": "https://th.bing.com/th/id/R.cca88c9d9851a5da092fa1964e42b04d?rik=eUbuoBwPBMyNIQ&pid=ImgRaw&r=0",
         "description": "Duy trì phong độ và từng bước phát triển nhân tài."
       },
       {
         "year": "2024",
         "title": "Công ty thành lập",
-        "description": "Những bước đầu trong việc xây dựng công ty lớn mạnhmạnh."
+        "image": "https://www.companybug.com/wp-content/uploads/2019/05/pexels-photo-1153213.jpeg",
+        "description": "Những bước đầu trong việc xây dựng công ty lớn mạnh."
       }
     ]
   },

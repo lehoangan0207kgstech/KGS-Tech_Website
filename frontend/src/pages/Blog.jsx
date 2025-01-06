@@ -123,7 +123,7 @@ const Blog = () => {
                                 <p className="text-gray-600 mb-4">{post.description}</p>
                                 <a
                                     href={post.link}
-                                    className="text-orange-500 font-semibold hover:underline"
+                                    className="text-secondary font-semibold hover:underline"
                                 >
                                     {t("blog.readMore", "Đọc thêm")}
                                 </a>

@@ -51,7 +51,7 @@ const Business = () => {
                             <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between h-full px-6 md:px-12 text-white">
                                 {/* Left Text Content */}
                                 <div className="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-                                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-2 drop-shadow-lg text-secondary">
+                                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-2 drop-shadow-lg text-white">
                                         {slide.title}
                                     </h1>
                                     <h2 className="text-lg md:text-2xl lg:text-3xl font-bold mb-4 drop-shadow-lg">
@@ -61,9 +61,9 @@ const Business = () => {
                                         <input
                                             type="text"
                                             placeholder={slide.placeholder}
-                                            className="w-full lg:w-2/3 p-3 rounded-t-lg lg:rounded-l-full border-none focus:ring-2 focus:ring-orange-600"
+                                            className="w-full lg:w-2/3 p-3 rounded-t-lg lg:rounded-l-full border-none focus:ring-2 focus:ring-secondary"
                                         />
-                                        <button className="w-full lg:w-auto px-4 py-3 bg-orange-500 text-white font-bold rounded-b-lg lg:rounded-r-full hover:bg-orange-600 transition">
+                                        <button className="w-full lg:w-auto px-4 py-3 bg-secondary text-white font-bold rounded-b-lg lg:rounded-r-full hover:bg-secondary transition">
                                             Tìm kiếm
                                         </button>
                                     </div>
@@ -95,7 +95,7 @@ const Business = () => {
                         />
                     </div>
                     <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
-                        <h2 className="text-3xl font-extrabold text-orange-600 mb-4">
+                        <h2 className="text-3xl font-extrabold text-secondary mb-4">
                             {t("business.bestWorkplaceTitle")}
                         </h2>
                         <div className="mb-4">
@@ -158,7 +158,7 @@ const Business = () => {
                                     alt={slide.title}
                                     className="rounded-lg object-cover w-full h-64 mb-4"
                                 />
-                                <div className="text-5xl mb-4 text-orange-500">{slide.icon}</div>
+                                <div className="text-5xl mb-4 text-secondary">{slide.icon}</div>
                                 <h3 className="text-xl font-bold mb-2 text-gray-800 text-center">
                                     {slide.title}
                                 </h3>
@@ -187,7 +187,7 @@ const Business = () => {
                         <input
                             type="email"
                             placeholder={t("contactForm.placeholder")}
-                            className="w-full px-6 py-4 rounded-l-full border-none focus:ring-2 focus:ring-orange-600 text-lg"
+                            className="w-full px-6 py-4 rounded-l-full border-none focus:ring-2 focus:ring-secondary text-lg"
                         />
                         <button className="px-10 bg-white text-secondary font-extrabold rounded-r-full hover:bg-gray-100 transition text-lg whitespace-nowrap">
                             {t("contactForm.buttonText")}
@@ -206,7 +206,7 @@ const Business = () => {
                         <p className="text-lg text-accent font-bold">
                             {t("business.contactUsSubtitle")}
                         </p>
-                        <h2 className="text-3xl font-extrabold text-orange-600">
+                        <h2 className="text-3xl font-extrabold text-secondary">
                             {t("business.contactUsTitle")}
                         </h2>
                     </div>
