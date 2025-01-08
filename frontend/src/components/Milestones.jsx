@@ -11,33 +11,37 @@ const Milestones = ({ milestones }) => {
       </h2>
       <div className="relative">
         {/* Đường kẻ dọc */}
-        <div className="absolute top-0 left-4 h-full w-1 bg-accent md:left-1/2 md:transform md:-translate-x-1/2"></div>
+        <div className="absolute top-0 left-4 w-1 bg-accent h-full md:left-1/2 md:transform md:-translate-x-1/2"></div>
         {milestones.map((milestone, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center relative ${
+            className={`relative flex flex-col md:flex-row items-center md:items-stretch ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
-            } mb-12 md:mb-16`}
+            } mb-8 sm:mb-12`}
           >
             {/* Nội dung */}
-            <div className="md:w-1/2 px-4 md:px-8 text-center md:text-left">
-              <h3 className="text-base sm:text-lg md:text-xl font-bold mb-4">
-                {milestone.title}
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-600">
-                {milestone.description}
-              </p>
+            <div className="md:w-1/2 px-4 md:px-8 text-center md:text-left flex items-center justify-center">
+              <div>
+                <h3 className="text-sm sm:text-base text-secondary md:text-lg font-extrabold mb-2 sm:mb-4">
+                  {milestone.title}
+                </h3>
+                <p className="text-xs sm:text-sm md:text-base text-gray-600">
+                  {milestone.description}
+                </p>
+              </div>
             </div>
             {/* Hình ảnh */}
-            <div className="md:w-1/2 flex justify-center md:justify-end px-4 md:px-8">
+            <div className="md:w-1/2 px-4 md:px-8 flex justify-center items-center">
               <img
                 src={milestone.image}
                 alt={milestone.title}
-                className="w-full max-w-xs sm:max-w-sm md:max-w-md rounded-lg shadow-lg"
+                className="w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] rounded-lg shadow-lg"
               />
             </div>
-            {/* Cột mốc */}
-            <div className="absolute top-1/2 left-4 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 w-6 h-6 bg-white border-4 border-accent rounded-full"></div>
+            {/* Hiển thị năm */}
+            <div className="absolute top-1/2 left-4 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 z-20 text-sm sm:text-base font-bold bg-white px-4 py-2 rounded-full shadow">
+              {milestone.year}
+            </div>
           </div>
         ))}
       </div>

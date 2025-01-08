@@ -59,7 +59,7 @@ const Company = () => {
                         <p className="text-sm md:text-base text-gray-600 leading-relaxed mb-4">
                             {t(`vision.${activeTab}.content`)}
                         </p>
-                        <button className="mt-4 px-6 py-3 bg-secondary text-white font-medium text-sm md:text-lg rounded-full shadow-md hover:bg-orange-600 transition-all">
+                        <button className="px-6 py-3 border-2 rounded-full font-bold transition-all duration-300 bg-white text-secondary border-secondary hover:bg-orange-100">
                             {t("vision.learnMore")}
                         </button>
                     </div>

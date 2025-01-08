@@ -5,6 +5,7 @@ import PageDownUp from '../components/PageDownUp';
 import BlogComponent from "../components/BlogComponent";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 import { FaHandshake, FaCogs, FaProjectDiagram, FaClipboardCheck } from "react-icons/fa";
 
 const Home = () => {
@@ -86,9 +87,15 @@ const Home = () => {
     return (
         <div className="bg-gray-50 min-h-screen">
 
-            <div className="relative w-full h-[95vh] bg-cover bg-center" style={{ backgroundImage: "url('https://rsdigitalservices.com/er/it%20company.webp')" }}>
+            <div
+                className="relative w-full h-[95vh] bg-cover bg-top"
+                style={{
+                    backgroundImage:
+                        "url('https://res.cloudinary.com/kgstech/image/upload/v1736305532/full-shot-smiley-people-work-min_vae5yg.jpg')",
+                }}
+            >
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                 {/* Nội dung chính */}
                 <div className="relative z-10 flex flex-col items-start justify-center h-full pl-10 md:pl-20 text-white">
                     {/* Tiêu đề */}
@@ -96,11 +103,13 @@ const Home = () => {
                     <p className="text-lg md:text-2xl mb-6">{t("banner.description")}</p>
 
                     {/* Nút */}
-                    <button className="flex items-center space-x-2 px-6 py-3 bg-secondary text-white font-medium text-lg rounded-lg hover:bg-orange-600">
-                        <span>{t("banner.title")}</span>
-                    </button>
+                    <Link to="/company">
+                        <button className="flex items-center space-x-2 px-6 py-3 bg-secondary text-white font-medium text-lg rounded-lg hover:bg-amber-800">
+                            <span>{t("banner.title")}</span>
+                        </button>
+                    </Link>
                 </div>
-            </div>
+            </div>;
             <PageDownUp sections={["chooseSection", "blogSection"]} label="Roll" icon="⬇" />
 
 
@@ -149,8 +158,11 @@ const Home = () => {
             </div>
 
             {/* Blog Section */}
-            <BlogComponent/>
-            
+            <div id="blogSection">
+                <BlogComponent />
+            </div>
+
+
         </div>
     );
 };
