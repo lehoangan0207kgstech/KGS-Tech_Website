@@ -2,8 +2,10 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import PageDownUp from '../components/PageDownUp';
+import BannerSlide from "../components/BannerSlide";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const Business = () => {
     const { t } = useTranslation();
@@ -29,63 +31,29 @@ const Business = () => {
         autoplaySpeed: 5000,
         arrows: false,
     };
+    const slideData = t("bannerSlides", { returnObjects: true }) || [];
 
     return (
         <div className="bg-gray-50 min-h-screen">
             {/* Image Slide Show */}
-            <div className="bg-white min-h-screen">
-                <Slider {...bannerSettings} className="relative">
-                    {t("bannerSlides", { returnObjects: true }).map((slide, index) => (
-                        <div key={index} className="relative w-full h-[90vh]">
-                            {/* Background Image */}
-                            <div className="absolute inset-0">
-                                <img
-                                    src={slide.image}
-                                    alt={slide.title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                            {/* Text and Search Input */}
-                            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center lg:justify-between h-full px-6 md:px-12 text-white">
-                                {/* Left Text Content */}
-                                <div className="lg:w-1/2 text-center lg:text-left mb-6 lg:mb-0">
-                                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-2 drop-shadow-lg text-white">
-                                        {slide.title}
-                                    </h1>
-                                    <h2 className="text-lg md:text-2xl lg:text-3xl font-bold mb-4 drop-shadow-lg">
-                                        {slide.subtitle}
-                                    </h2>
-                                    <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto">
-                                        <input
-                                            type="text"
-                                            placeholder={slide.placeholder}
-                                            className="w-full lg:w-2/3 p-3 rounded-t-lg lg:rounded-l-full border-none focus:ring-2 focus:ring-secondary"
-                                        />
-                                        <button className="w-full lg:w-auto px-4 py-3 bg-secondary text-white font-bold rounded-b-lg lg:rounded-r-full hover:bg-secondary transition">
-                                            Tìm kiếm
-                                        </button>
-                                    </div>
-                                </div>
-                                {/* Right Image */}
-                                <div className="lg:w-1/2 hidden lg:flex items-center justify-center">
-                                    <img
-                                        src={slide.image}
-                                        alt="Hero Slide"
-                                        className="rounded-lg shadow-lg object-cover max-h-[70%] w-full"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+            <motion.div
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7 }}
+            >
+                <BannerSlide bannerSlides={slideData} settings={bannerSettings} />
+            </motion.div>
 
-            <PageDownUp sections={["infoSection", "benefitSection", "formSection", "contactSection"]}/>
+            <PageDownUp sections={["infoSection", "benefitSection", "formSection", "contactSection"]} />
 
             {/* Information Section */}
-            <div id="infoSection" className="bg-gray-100 py-24">
+            <motion.div
+                id="infoSection" className="bg-gray-100 py-24"
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+            >
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-6">
                     <div className="w-full md:w-1/2">
                         <img
@@ -134,10 +102,14 @@ const Business = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Benefits Section */}
-            <div id="benefitSection" className="container mx-auto py-16 px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <motion.div id="benefitSection" className="container mx-auto py-16 px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center"
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}>
                 <div>
                     <p className="text-lg text-accent leading-relaxed font-bold">
                         {t("business.benefitsDescription")}
@@ -167,7 +139,7 @@ const Business = () => {
                         ))}
                     </Slider>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Contact Form Section */}
             <div id="formSection" className="bg-secondary py-16 px-10 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto">
@@ -232,7 +204,7 @@ const Business = () => {
             </div>
 
 
-        </div>
+        </div >
     );
 };
 

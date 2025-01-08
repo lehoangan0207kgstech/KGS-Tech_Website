@@ -21,7 +21,7 @@ const Milestones = ({ milestones }) => {
           >
             {/* Nội dung */}
             <div className="md:w-1/2 px-4 md:px-8 text-center md:text-left flex items-center justify-center">
-              <div>
+              <div className="max-w-md">
                 <h3 className="text-sm sm:text-base text-secondary md:text-lg font-extrabold mb-2 sm:mb-4">
                   {milestone.title}
                 </h3>
@@ -39,7 +39,7 @@ const Milestones = ({ milestones }) => {
               />
             </div>
             {/* Hiển thị năm */}
-            <div className="absolute top-1/2 left-4 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 z-20 text-sm sm:text-base font-bold bg-white px-4 py-2 rounded-full shadow">
+            <div className="absolute top-1/2 left-4 md:left-1/2 transform -translate-y-1/2 md:-translate-x-1/2 z-20 text-sm sm:text-base font-bold bg-white px-2 py-2 rounded-full shadow whitespace-nowrap">
               {milestone.year}
             </div>
           </div>
