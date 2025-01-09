@@ -140,6 +140,12 @@
       "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
     }
   ],
+  "videoBanner": {
+    "title": "Lên kế hoạch cho sự vĩnh cửu của bạn tốt hơn.",
+    "description": "Thiết kế một trang web cá nhân hóa, tạo sổ đăng ký tất cả trong một và trải nghiệm lập kế hoạch đám cưới theo cách nó nên như thế.",
+    "buttonGetStarted": "Bắt đầu ngay",
+    "buttonFindEvent": "Tìm sự kiện"
+  },
   "contactItems": [
     {
       "icon": "📍",
@@ -204,5 +210,28 @@
     "description": "Nhận thông báo việc làm mới nhất.",
     "placeholder": "Nhập địa chỉ email",
     "buttonText": "ĐĂNG KÝ"
+  },
+  "partners": {
+    "title": "Đối Tác Tin Cậy Của Chúng Tôi",
+    "description": "Các công ty công nghệ hàng đầu tại Việt Nam"
+  },
+  "reel": {
+    "title": "Hãy hạnh phúc với số nụ cười",
+    "subtitle": "Công ty KGS Tech",
+    "smileCount": "186,888,686人",
+    "note": "※業自お好み焼売り上げ数"
+  },
+  "address": {
+    "title": "Địa chỉ của chúng tôi",
+    "location": "Số 40, Đường 16, An Phú, TP Thủ Đức, TP Hồ Chí Minh"
+  },
+  "message": {
+    "title": "Lời nhắn từ Sếp Sumimoto",
+    "subtitle": "Cùng với cộng đồng địa phương, chúng tôi sẽ tiếp thêm năng lượng...",
+    "content": [
+      "Tại KGS Tech, chúng tôi muốn làm cho công nghệ trở nên bền vững.",
+      "Với suy nghĩ này, chúng tôi đang cố gắng truyền bá các giải pháp công nghệ tiên tiến.",
+      "Lý do cho điều này là chúng tôi nhận thấy giá trị của sự phát triển cộng đồng và tương lai."
+    ]
   }
 }

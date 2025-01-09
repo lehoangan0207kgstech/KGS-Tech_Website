@@ -36,7 +36,7 @@ const BannerSlide = ({ bannerSlides, settings }) => {
                                     <input
                                         type="text"
                                         placeholder={slide.placeholder}
-                                        className="w-full lg:w-2/3 p-3 rounded-t-lg lg:rounded-l-full border-none focus:ring-2 focus:ring-secondary"
+                                        className="w-full lg:w-2/3 p-3 rounded-t-lg lg:rounded-l-full border-none focus:ring-2 focus:ring-secondary text-secondary"
                                     />
                                     <button className="w-full lg:w-auto px-4 py-3 bg-secondary text-white font-bold rounded-b-lg lg:rounded-r-full hover:bg-secondary transition">
                                         Tìm kiếm

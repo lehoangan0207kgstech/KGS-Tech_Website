@@ -140,6 +140,12 @@
       "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
     }
   ],
+  "videoBanner": {
+    "title": "永遠をより良く計画する。",
+    "description": "パーソナライズされたウェブサイトをデザインし、オールインワンのレジストリを作成し、理想的な結婚式の計画を体験してください。",
+    "buttonGetStarted": "始める",
+    "buttonFindEvent": "イベントを探す"
+  },
   "contactItems": [
     {
       "icon": "📍",
@@ -204,5 +210,28 @@
     "description": "最新の求人通知を受け取る。",
     "placeholder": "メールアドレスを入力してください",
     "buttonText": "登録"
+  },
+  "partners": {
+    "title": "私たちの信頼できるパートナー",
+    "description": "ベトナムの主要なテクノロジー企業"
+  },
+  "reel": {
+    "title": "笑顔の数だけ幸せになりましょう",
+    "subtitle": "KGS テック カンパニー",
+    "smileCount": "186,888,686人",
+    "note": "※業自お好み焼売り上げ数"
+  },
+  "address": {
+    "title": "私たちの住所",
+    "location": "ホーチミン市、トゥードゥック市、アンフー、16番通り40号"
+  },
+  "message": {
+    "title": "住本社長からのメッセージ",
+    "subtitle": "地域社会と共に、私たちはエネルギーを届けます...",
+    "content": [
+      "KGS Techでは、テクノロジーを持続可能にすることを目指しています。",
+      "そのために、先進的な技術ソリューションを広める努力をしています。",
+      "これには地域社会と未来の発展の価値を認識していることが背景にあります。"
+    ]
   }
 }

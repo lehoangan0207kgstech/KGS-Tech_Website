@@ -140,6 +140,12 @@
       "image": "https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/209-running-in-the-woods.jpg"
     }
   ],
+  "videoBanner": {
+    "title": "Plan your forever, better.",
+    "description": "Design a personalized website, create an all-in-one registry, and experience wedding planning the way it should be.",
+    "buttonGetStarted": "Get Started",
+    "buttonFindEvent": "Find an Event"
+  },
   "contactItems": [
     {
       "icon": "📍",
@@ -204,5 +210,28 @@
     "description": "Receive the latest job notifications.",
     "placeholder": "Enter your email address",
     "buttonText": "SUBSCRIBE"
+  },
+  "partners": {
+    "title": "Our Trusted Partners",
+    "description": "Leading Technology Companies in Vietnam"
+  },
+  "reel": {
+    "title": "Be happy only the number of smiles",
+    "subtitle": "KGS Tech Company",
+    "smileCount": "186,888,686人",
+    "note": "※Industry-specific sales figures"
+  },
+  "address": {
+    "title": "Our Address",
+    "location": "40 Street 16, An Phu, Thu Duc City, Ho Chi Minh City"
+  },
+  "message": {
+    "title": "Message from CEO Sumimoto",
+    "subtitle": "Together with local communities, we will bring energy...",
+    "content": [
+      "At KGS Tech, we aim to make technology sustainable.",
+      "With this in mind, we strive to promote advanced technology solutions.",
+      "The reason for this is our recognition of the value of community and future development."
+    ]
   }
 }

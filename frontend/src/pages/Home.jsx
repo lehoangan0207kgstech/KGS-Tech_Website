@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 import PageDownUp from '../components/PageDownUp';
 import BlogComponent from "../components/BlogComponent";
 import WhyChoose from "../components/WhyComponent";
+import Reel from "../components/Reel";
+import Partner from "../components/Partner";
+import Message from "../components/Message";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
@@ -10,7 +13,7 @@ import { FaHandshake, FaCogs, FaProjectDiagram, FaClipboardCheck } from "react-i
 import { motion } from "framer-motion"; // Import Framer Motion
 
 const Home = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const features = [
         {
@@ -95,7 +98,8 @@ const Home = () => {
             </motion.div>
 
             {/* Scroll Indicator */}
-            <PageDownUp sections={["chooseSection", "blogSection"]} label="Roll" icon="⬇" />
+            <PageDownUp sections={["chooseSection","message","reelSection", "partner", "blogSection"]} label="Roll" icon="⬇" />
+
 
             {/* Why Choose Section */}
             <motion.div
@@ -106,6 +110,35 @@ const Home = () => {
                 viewport={{ once: true }}
             >
                 <WhyChoose features={features} t={t} />
+            </motion.div>
+
+            {/* Thong diep cua sep */}
+            <motion.div id="message">
+                <Message />
+            </motion.div>
+
+            {/* Reel Section */}
+            <motion.div
+                id="reelSection"
+                className="py-12"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+            >
+                <Reel />
+            </motion.div>
+
+            {/* Partner Section */}
+            <motion.div
+                id="partner"
+                className="py-12"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+            >
+                <Partner />
             </motion.div>
 
             {/* Blog Section */}

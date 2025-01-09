@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion"; // Import Framer Motion
 import PageDownUp from "../components/PageDownUp";
 
 const Blog = () => {
@@ -78,7 +79,7 @@ const Blog = () => {
             link: "/blog/rpa-automation",
             category: "Phần mềm",
         },
-        
+
     ];
 
     const [selectedCategory, setSelectedCategory] = useState("Tất cả");
@@ -91,8 +92,22 @@ const Blog = () => {
         ? blogPosts
         : blogPosts.filter(post => post.category === selectedCategory);
 
+    // Animation variants
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, ease: "easeOut" },
+        },
+    };
+
     return (
-        <div className="bg-gray-100 min-h-screen py-40 px-6">
+        <motion.div
+            className="bg-gray-100 min-h-screen py-40 px-6"
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}>
             <div className="container mx-auto max-w-7xl">
                 {/* Header */}
                 <div className="text-center mb-12">
@@ -110,11 +125,10 @@ const Blog = () => {
                         <button
                             key={index}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-4 py-2 rounded ${
-                                selectedCategory === category
-                                    ? "bg-secondary text-white"
-                                    : "bg-white text-gray-700 border"
-                            }`}
+                            className={`px-4 py-2 rounded ${selectedCategory === category
+                                ? "bg-secondary text-white"
+                                : "bg-white text-gray-700 border"
+                                }`}
                         >
                             {category}
                         </button>
@@ -128,7 +142,8 @@ const Blog = () => {
                     {filteredPosts.map((post, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition"
+                            onClick={() => window.location.href = post.link}
+                            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition cursor-pointer"
                         >
                             <img
                                 src={post.image}
@@ -151,7 +166,7 @@ const Blog = () => {
                 </div>
                 <div id="frame"></div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

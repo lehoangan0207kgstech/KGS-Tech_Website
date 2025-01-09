@@ -11,25 +11,42 @@ const PageDownUp = ({
     useEffect(() => {
         const handleScroll = () => {
             const currentScroll = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+
+            // Check if we're at the bottom of the page
             const bottomReached =
-                window.innerHeight + currentScroll >= document.documentElement.scrollHeight - 10;
-            setIsAtBottom(bottomReached);
+                windowHeight + currentScroll >= documentHeight - 10;
+
+            // Check if we're at the last section
+            const sectionOffsets = sections.map((id) => {
+                const el = document.getElementById(id);
+                return el ? el.offsetTop : null;
+            });
+
+            const lastSectionOffset = Math.max(...sectionOffsets.filter(Boolean));
+            const isAtLastSection =
+                currentScroll + windowHeight >= lastSectionOffset + windowHeight;
+
+            setIsAtBottom(bottomReached || isAtLastSection);
         };
 
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    }, [sections]);
 
     const handleScroll = () => {
         setIsPressed(true);
         setTimeout(() => setIsPressed(false), 300);
 
         if (isAtBottom) {
+            // Scroll to the top
             window.scrollTo({
                 top: 0,
                 behavior: "smooth",
             });
         } else {
+            // Scroll to the next section
             const currentScroll = window.scrollY;
             const sectionOffsets = sections.map((id) => {
                 const el = document.getElementById(id);

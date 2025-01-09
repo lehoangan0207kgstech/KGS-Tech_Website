@@ -15,7 +15,7 @@ export default {
         primary: '#000000',     
         secondary: '#935A38',   
         accent: '#1F2937',  
-        bt_hover: '501A00',
+        bt_hover: '#501A00',
       },
     },
   },

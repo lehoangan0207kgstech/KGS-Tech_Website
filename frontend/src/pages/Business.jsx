@@ -31,6 +31,13 @@ const Business = () => {
         autoplaySpeed: 5000,
         arrows: false,
     };
+
+    // Animation Variants
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+    };
+
     const slideData = t("bannerSlides", { returnObjects: true }) || [];
 
     return (
@@ -142,7 +149,15 @@ const Business = () => {
             </motion.div>
 
             {/* Contact Form Section */}
-            <div id="formSection" className="bg-secondary py-16 px-10 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto">
+            <motion.div
+                id="formSection"
+                className="bg-secondary py-16 px-10 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={fadeInUp}
+                transition={{ duration: 0.5 }}
+            >
                 {/* Left Content */}
                 <div className="text-white text-center md:text-left md:w-1/2 px-8">
                     <h3 className="text-4xl font-extrabold uppercase mb-6">
@@ -166,12 +181,20 @@ const Business = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
 
 
             {/* Contact Section */}
-            <div id="contactSection" className="bg-gray-100 py-12 px-4">
+            <motion.div
+                id="contactSection"
+                className="bg-gray-100 py-12 px-4"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={fadeInUp}
+                transition={{ duration: 0.5 }}
+            >
                 <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-12">
                     {/* Left Content */}
                     <div className="w-full lg:w-1/2 text-center lg:text-left space-y-4">
@@ -191,7 +214,7 @@ const Business = () => {
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="flex flex-col items-center text-gray-700 hover:text-orange-500 transition"
+                                className="flex flex-col items-center text-gray-700 hover:text-secondary transition font-bold"
                             >
                                 <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gray-300 text-3xl">
                                     {item.icon}
@@ -201,7 +224,7 @@ const Business = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
 
         </div >
