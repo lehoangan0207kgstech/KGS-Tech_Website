@@ -1,11 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import vi from './i18n/locales/vi.json';
-import ja from './i18n/locales/ja.json';
-import './i18n/i18n';
+import { useTranslation } from 'react-i18next';
+import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -14,8 +11,17 @@ import Business from './pages/Business';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Loading from './components/Loading'; // Import Loading Component
-import { useTranslation } from 'react-i18next';
-import { AnimatePresence } from 'framer-motion';
+
+// Component cuộn lên đầu
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   const { t } = useTranslation();
@@ -38,6 +44,9 @@ function App() {
     <div className="min-h-screen flex flex-col">
       {/* Hiển thị Loading nếu isLoading = true */}
       {isLoading && <Loading />}
+
+      {/* Scroll-to-top logic */}
+      <ScrollToTop />
 
       {/* Header */}
       <Header
