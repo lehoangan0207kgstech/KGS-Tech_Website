@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const BlogComponent = () => {
-  
+
   const { t } = useTranslation();
 
   const blogs = [
@@ -48,15 +48,17 @@ const BlogComponent = () => {
                 <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
                 <div className="p-4">
                   <h3 className="font-bold text-lg mb-2">{blog.title}</h3>
-                  <p className="text-sm text-gray-600 mb-4">{blog.description}</p>
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    {blog.description}
+                  </p>
                 </div>
               </Link>
-              <div className="p-4">
+              <div className="p-4 flex justify-start">
                 <Link
                   to={`/blog/${blog.id}`}
                   className="text-secondary hover:underline font-medium text-sm"
                 >
-                 {t("blog.readMore", "Đọc thêm")}
+                  {t("blog.readMore", "Đọc thêm")}
                 </Link>
               </div>
             </div>

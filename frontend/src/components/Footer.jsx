@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       {/* Dòng bản quyền */}
-      <div className="text-center mt-8 border-t border-gray-700 pt-4">
+      <div className="text-center mt-8 border-t border-gray-700 pt-9 flex justify-center items-center">
         <p className="text-sm">©2024 {t("footer.copyright")}</p>
       </div>
     </footer>

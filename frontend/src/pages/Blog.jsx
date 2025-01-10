@@ -143,23 +143,27 @@ const Blog = () => {
                         <div
                             key={index}
                             onClick={() => window.location.href = post.link}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition cursor-pointer"
+                            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition cursor-pointer flex flex-col"
                         >
                             <img
                                 src={post.image}
                                 alt={post.title}
                                 className="w-full h-48 object-cover"
                             />
-                            <div className="p-6">
+                            <div className="p-6 flex-1 flex flex-col">
                                 <h2 className="text-xl font-bold text-gray-800 mb-2">{post.title}</h2>
                                 <p className="text-sm text-gray-500 mb-4">{post.date}</p>
-                                <p className="text-gray-600 mb-4">{post.description}</p>
-                                <a
-                                    href={post.link}
-                                    className="text-secondary font-semibold hover:underline"
-                                >
-                                    {t("blog.readMore", "Đọc thêm")}
-                                </a>
+                                <p className="text-gray-600 mb-4 line-clamp-3">
+                                    {post.description}
+                                </p>
+                                <div className="mt-auto">
+                                    <a
+                                        href={post.link}
+                                        className="text-secondary font-semibold hover:underline"
+                                    >
+                                        {t("blog.readMore", "Đọc thêm")}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     ))}

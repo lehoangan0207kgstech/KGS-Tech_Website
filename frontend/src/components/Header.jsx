@@ -29,7 +29,7 @@ const Header = () => {
     if (location.pathname === "/" || location.pathname === "/company" || location.pathname === "/business") {
       const handleScroll = () => {
         const scrollY = window.scrollY;
-        const imageHeight = 600;
+        const imageHeight = 300;
 
         if (scrollY < imageHeight) {
           setHeaderStyle("transparent");
