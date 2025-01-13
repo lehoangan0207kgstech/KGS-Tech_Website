@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (location.pathname === "/" || location.pathname === "/business") {
+    if (location.pathname === "/") {
       const handleScroll = () => {
         const scrollY = window.scrollY;
         const imageHeight = 300;

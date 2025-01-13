@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const WhyChoose = ({ features, t }) => {
   return (
     <div id="chooseSection" className="container mx-auto py-24 px-4">
-      <h2 className="text-3xl font-extrabold text-center text-accent mb-8">
+      <h2 className="text-3xl font-bold text-center text-accent mb-8">
         {t("features.whyChoose")}
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -21,7 +21,8 @@ const WhyChoose = ({ features, t }) => {
             {/* Nội dung hiển thị trên PC */}
             <div className="hidden md:flex absolute inset-0 items-center justify-center text-white transition-all duration-300">
               <div className="flex flex-col items-center justify-center text-center group-hover:scale-110 transition-transform duration-300">
-                <div className="text-5xl mb-4">{feature.icon}</div> {/* Tăng kích thước icon */}
+                <div className="text-5xl mb-4">{feature.icon}</div>{" "}
+                {/* Tăng kích thước icon */}
                 <h3 className="text-2xl font-extrabold uppercase">
                   {feature.description}
                 </h3>

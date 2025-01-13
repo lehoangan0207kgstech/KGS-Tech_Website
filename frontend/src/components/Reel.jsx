@@ -12,7 +12,7 @@ const Reel = () => {
   return (
     <div className="relative bg-white py-10">
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-extrabold text-accent text-center mb-8">
+        <h1 className="text-3xl font-bold text-accent text-center mb-8">
           {t("reel.title")}
         </h1>
         <p className="text-lg text-gray-600">{t("reel.subtitle")}</p>

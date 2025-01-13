@@ -10,10 +10,8 @@ const PageDownUp = ({ sections, iconDown = "⩔", iconUp = "⩕" }) => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      // Check if we're at the bottom of the page
       const bottomReached = windowHeight + currentScroll >= documentHeight - 10;
 
-      // Check if we're at the last section
       const sectionOffsets = sections.map((id) => {
         const el = document.getElementById(id);
         return el ? el.offsetTop : null;
@@ -35,13 +33,11 @@ const PageDownUp = ({ sections, iconDown = "⩔", iconUp = "⩕" }) => {
     setTimeout(() => setIsPressed(false), 300);
 
     if (isAtBottom) {
-      // Scroll to the top
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
     } else {
-      // Scroll to the next section
       const currentScroll = window.scrollY;
       const sectionOffsets = sections.map((id) => {
         const el = document.getElementById(id);
@@ -63,12 +59,22 @@ const PageDownUp = ({ sections, iconDown = "⩔", iconUp = "⩕" }) => {
   return (
     <button
       onClick={handleScroll}
-      className={`fixed bottom-4 right-4 z-50 bg-gradient-to-r from-[#A8DEE0] to-accent text-white font-bold py-4 px-6 rounded-full shadow-xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center backdrop-blur-lg`}
+      className={`fixed bottom-4 right-6 z-50 bg-gradient-to-r from-[#A8DEE0] to-accent text-white font-bold rounded-full shadow-xl transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center backdrop-blur-lg ${
+        isPressed ? "animate-pulse" : ""
+      }`}
       style={{
-        animation: isPressed ? "pulse 0.5s ease" : "none",
+        fontSize: "1rem", // Smaller size for mobile
+        width: "50px",
+        height: "50px",
+        marginRight: "10px", // Extra margin for spacing from the right edge
+        "@media (min-width: 768px)": {
+          fontSize: "2.5rem", // Larger size for PC
+          width: "90px",
+          height: "90px",
+        },
       }}
     >
-      <span className="text-3xl font-bold animate-bounce">
+      <span className="text-lg md:text-2xl font-bold animate-bounce">
         {isAtBottom ? iconUp : iconDown}
       </span>
     </button>

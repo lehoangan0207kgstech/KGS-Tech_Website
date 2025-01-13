@@ -7,7 +7,7 @@ const ImgInfo = () => {
   return (
     <div className="bg-white py-16 px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-extrabold text-center text-accent mb-12">
+        <h2 className="text-3xl font-bold text-center text-accent mb-12">
           {t("ImgInfo.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center font-beVietnam">

@@ -25,14 +25,14 @@
     "copyright": "this copyright belongs to KGS Tech"
   },
   "features": {
-    "whyChoose": "Why choose KGS Tech?",
+    "whyChoose": "WHY CHOOSE KGS TECH ?",
     "strategicPartner": "Strategic partner",
     "comprehensiveSolutions": "Comprehensive solutions",
     "internationalWorkflow": "International standard workflow",
     "largeProjects": "Large and complex projects"
   },
   "blog": {
-    "title": "News & Articles",
+    "title": "NEWS & ARTICLES",
     "readMore": "Read More",
     "posts": [
       {
@@ -70,7 +70,7 @@
     }
   },
   "milestones": {
-    "title": "Key Milestones",
+    "title": "MILESTONES",
     "items": [
       {
         "year": "Now",
@@ -93,7 +93,7 @@
     ]
   },
   "leaders": {
-    "title": "Senior Leadership Team",
+    "title": "SENIOR LEADERSHIP TEAM",
     "list": [
       {
         "name": "Sumimoto",
@@ -114,16 +114,28 @@
   },
   "bannerSlides": [
     {
+      "id": 1,
+      "image": "https://res.cloudinary.com/kgstech/image/upload/v1736305532/full-shot-smiley-people-work-min_vae5yg.jpg",
+      "alt": "Slide 1",
       "title": "FROM VIETNAM",
-      "subtitle": "REACHING OUT TO THE WORLD",
-      "placeholder": "What job are you looking for?",
-      "image": "https://img.freepik.com/free-photo/labor-union-members-working-together_23-2150969885.jpg?t=st=1736306879~exp=1736310479~hmac=1928fc9d759717eb9cecfe9963fd7430b19c5c48e4873e288cd272000acd6aa8&w=1380"
+      "subtitle": "REACHING THE WORLD",
+      "placeholder": "What job are you looking for?"
     },
     {
+      "id": 2,
+      "image": "https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149636268.jpg?t=st=1736733711~exp=1736737311~hmac=0e03654763f69e6d62a9aa6fa36b1fddd5da6d9ef8c79b314c761407e1dbd240&w=1380",
+      "alt": "Slide 2",
       "title": "BEST OPPORTUNITIES",
       "subtitle": "FOR VIETNAMESE TALENTS",
-      "placeholder": "Explore now!",
-      "image": "https://img.freepik.com/free-photo/front-view-smiley-people-working_23-2149636270.jpg?t=st=1736306971~exp=1736310571~hmac=19eae5dd54d5cf13671d94431319c9ae8a362b22ccfa5cb04e751b0538b77835&w=1380"
+      "placeholder": "Discover your opportunities now!"
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/medium-shot-happy-colleagues-talking_23-2149006918.jpg?t=st=1736733755~exp=1736737355~hmac=2f3542600483053d2c47d42fd8e8c3dc56ad5c8c440fabaa53054e95b31bbcaa&w=1380",
+      "alt": "Slide 3",
+      "title": "WITH YOU",
+      "subtitle": "TOWARDS SUCCESS",
+      "placeholder": "Let's get started together!"
     }
   ],
   "slides": [
@@ -148,32 +160,32 @@
   },
   "contactItems": [
     {
-      "icon": "📍",
+      "icon": "♕",
       "title": "KGS Tech - Home",
       "link": ""
     },
     {
-      "icon": "🎥",
+      "icon": "✐",
       "title": "Life at KGS Tech",
       "link": ""
     },
     {
-      "icon": "📘",
+      "icon": "☞",
       "title": "@KGSrecruitment",
       "link": ""
     },
     {
-      "icon": "📞",
+      "icon": "✆",
       "title": "0362 *** ***",
       "link": "tel:0362 *** ***"
     },
     {
-      "icon": "✉️",
+      "icon": "✉",
       "title": "kgstech@gmail.com",
       "link": ""
     },
     {
-      "icon": "🔗",
+      "icon": "≣",
       "title": "KGS Tech Corporation",
       "link": ""
     }
@@ -212,30 +224,22 @@
     "buttonText": "SUBSCRIBE"
   },
   "partners": {
-    "title": "Our Trusted Partners",
+    "title": "OUR TRUSTED PARTNESS",
     "description": "Leading Technology Companies in Vietnam"
   },
   "reel": {
-    "title": "Be happy only the number of smiles",
+    "title": "BE HAPPY ONLY THE NUMBER OF SMILES",
     "subtitle": "KGS Tech Company",
     "smileCount": "186,888,686人",
     "note": "※Industry-specific sales figures"
   },
   "address": {
-    "title": "Our Address",
+    "title": "OUR ADDRESS",
     "location": "40 Street 16, An Phu, Thu Duc City, Ho Chi Minh City"
-  },
-  "message": {
-    "title": "Message from CEO Sumimoto",
-    "subtitle": "Together with local communities, we will bring energy...",
-    "content": [
-      "At KGS Tech, we aim to make technology sustainable.",
-      "With this in mind, we strive to promote advanced technology solutions.",
-      "The reason for this is our recognition of the value of community and future development."
-    ]
   },
   "ImgInfo": {
     "title": "KGS TECH AND WHAT MAKES IT DIFFERENT",
     "readmore": "Read More"
-  }
+  },
+  "BlogDetail": "Back"
 }

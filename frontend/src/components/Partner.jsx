@@ -52,7 +52,7 @@ const Partner = () => {
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-extrabold text-accent text-center mb-8">
+          <h2 className="text-3xl font-bold text-accent text-center mb-8">
             {t("partners.title")} {/* Lấy nội dung tiêu đề từ JSON */}
           </h2>
           <p className="text-lg text-gray-600 mt-2">

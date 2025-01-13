@@ -114,16 +114,28 @@
   },
   "bannerSlides": [
     {
+      "id": 1,
+      "image": "https://res.cloudinary.com/kgstech/image/upload/v1736305532/full-shot-smiley-people-work-min_vae5yg.jpg",
+      "alt": "Slide 1",
       "title": "ベトナムから",
-      "subtitle": "世界へ",
-      "placeholder": "どの仕事を探していますか？",
-      "image": "https://img.freepik.com/free-photo/labor-union-members-working-together_23-2150969885.jpg?t=st=1736306879~exp=1736310479~hmac=1928fc9d759717eb9cecfe9963fd7430b19c5c48e4873e288cd272000acd6aa8&w=1380"
+      "subtitle": "世界へ羽ばたく",
+      "placeholder": "どんな仕事を探していますか？"
     },
     {
-      "title": "最高のチャンス",
-      "subtitle": "ベトナムの才能へ",
-      "placeholder": "今すぐ探してみよう！",
-      "image": "https://img.freepik.com/free-photo/front-view-smiley-people-working_23-2149636270.jpg?t=st=1736306971~exp=1736310571~hmac=19eae5dd54d5cf13671d94431319c9ae8a362b22ccfa5cb04e751b0538b77835&w=1380"
+      "id": 2,
+      "image": "https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149636268.jpg?t=st=1736733711~exp=1736737311~hmac=0e03654763f69e6d62a9aa6fa36b1fddd5da6d9ef8c79b314c761407e1dbd240&w=1380",
+      "alt": "Slide 2",
+      "title": "最高の機会",
+      "subtitle": "ベトナム人の才能へ",
+      "placeholder": "今すぐチャンスを発見してください！"
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/medium-shot-happy-colleagues-talking_23-2149006918.jpg?t=st=1736733755~exp=1736737355~hmac=2f3542600483053d2c47d42fd8e8c3dc56ad5c8c440fabaa53054e95b31bbcaa&w=1380",
+      "alt": "Slide 3",
+      "title": "あなたと共に",
+      "subtitle": "成功への道",
+      "placeholder": "一緒に始めましょう！"
     }
   ],
   "slides": [
@@ -148,32 +160,32 @@
   },
   "contactItems": [
     {
-      "icon": "📍",
+      "icon": "♕",
       "title": "KGS Tech - ホーム",
       "link": ""
     },
     {
-      "icon": "🎥",
+      "icon": "✐",
       "title": "KGS Techでの生活",
       "link": ""
     },
     {
-      "icon": "📘",
+      "icon": "☞",
       "title": "@KGSrecruitment",
       "link": ""
     },
     {
-      "icon": "📞",
+      "icon": "✆",
       "title": "0362 *** ***",
       "link": "tel:0362 *** ***"
     },
     {
-      "icon": "✉️",
+      "icon": "✉",
       "title": "kgstech@gmail.com",
       "link": ""
     },
     {
-      "icon": "🔗",
+      "icon": "≣",
       "title": "KGS Tech 株式会社",
       "link": ""
     }
@@ -225,17 +237,9 @@
     "title": "私たちの住所",
     "location": "ホーチミン市、トゥードゥック市、アンフー、16番通り40号"
   },
-  "message": {
-    "title": "住本社長からのメッセージ",
-    "subtitle": "地域社会と共に、私たちはエネルギーを届けます...",
-    "content": [
-      "KGS Techでは、テクノロジーを持続可能にすることを目指しています。",
-      "そのために、先進的な技術ソリューションを広める努力をしています。",
-      "これには地域社会と未来の発展の価値を認識していることが背景にあります。"
-    ]
-  },
   "ImgInfo": {
     "title": "KGS TECH とその違い",
     "readmore": "もっと見る"
-  }
+  },
+  "BlogDetail": "戻る"
 }

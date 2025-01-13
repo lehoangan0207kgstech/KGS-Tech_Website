@@ -25,7 +25,7 @@
     "copyright": "bản quyền này thuộc về Công Ty Cổ Phần KGS Tech"
   },
   "features": {
-    "whyChoose": "TÁI SAO CHỌN KGS TECH ?",
+    "whyChoose": "TẠI SAO CHỌN KGS TECH ?",
     "strategicPartner": "Đối tác chiến lược",
     "comprehensiveSolutions": "Giải pháp toàn diện",
     "internationalWorkflow": "Quy trình chuẩn quốc tế",
@@ -114,16 +114,28 @@
   },
   "bannerSlides": [
     {
+      "id": 1,
+      "image": "https://res.cloudinary.com/kgstech/image/upload/v1736305532/full-shot-smiley-people-work-min_vae5yg.jpg",
+      "alt": "Slide 1",
       "title": "TỪ VIỆT NAM",
       "subtitle": "VƯƠN TẦM THẾ GIỚI",
-      "placeholder": "Bạn đang tìm kiếm công việc gì?",
-      "image": "https://img.freepik.com/free-photo/labor-union-members-working-together_23-2150969885.jpg?t=st=1736306879~exp=1736310479~hmac=1928fc9d759717eb9cecfe9963fd7430b19c5c48e4873e288cd272000acd6aa8&w=1380"
+      "placeholder": "Bạn đang tìm kiếm công việc gì?"
     },
     {
+      "id": 2,
+      "image": "https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149636268.jpg?t=st=1736733711~exp=1736737311~hmac=0e03654763f69e6d62a9aa6fa36b1fddd5da6d9ef8c79b314c761407e1dbd240&w=1380",
+      "alt": "Slide 2",
       "title": "CƠ HỘI TỐT NHẤT",
       "subtitle": "CHO TÀI NĂNG VIỆT",
-      "placeholder": "Hãy khám phá ngay!",
-      "image": "https://img.freepik.com/free-photo/front-view-smiley-people-working_23-2149636270.jpg?t=st=1736306971~exp=1736310571~hmac=19eae5dd54d5cf13671d94431319c9ae8a362b22ccfa5cb04e751b0538b77835&w=1380"
+      "placeholder": "Khám phá ngay cơ hội của bạn!"
+    },
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/medium-shot-happy-colleagues-talking_23-2149006918.jpg?t=st=1736733755~exp=1736737355~hmac=2f3542600483053d2c47d42fd8e8c3dc56ad5c8c440fabaa53054e95b31bbcaa&w=1380",
+      "alt": "Slide 3",
+      "title": "ĐỒNG HÀNH CÙNG BẠN",
+      "subtitle": "CHẠM TỚI THÀNH CÔNG",
+      "placeholder": "Hãy cùng chúng tôi bắt đầu!"
     }
   ],
   "slides": [
@@ -148,32 +160,32 @@
   },
   "contactItems": [
     {
-      "icon": "📍",
+      "icon": "♕",
       "title": "KGS Tech - Home",
       "link": ""
     },
     {
-      "icon": "🎥",
+      "icon": "✐",
       "title": "Life at KGS Tech",
       "link": ""
     },
     {
-      "icon": "📘",
+      "icon": "☞",
       "title": "@KGSrecruitment",
       "link": ""
     },
     {
-      "icon": "📞",
+      "icon": "✆",
       "title": "0362 *** ***",
       "link": "tel:0362 *** ***"
     },
     {
-      "icon": "✉️",
+      "icon": "✉",
       "title": "kgstech@gmail.com",
       "link": ""
     },
     {
-      "icon": "🔗",
+      "icon": "≣",
       "title": "KGS Tech Corporation",
       "link": ""
     }
@@ -222,20 +234,12 @@
     "note": "※業自お好み焼売り上げ数"
   },
   "address": {
-    "title": "Địa chỉ của chúng tôi",
+    "title": "ĐỊA CHỈ CÔNG TY CHÚNG TÔI",
     "location": "Số 40, Đường 16, An Phú, TP Thủ Đức, TP Hồ Chí Minh"
-  },
-  "message": {
-    "title": "Lời nhắn từ Sếp Sumimoto",
-    "subtitle": "Cùng với cộng đồng địa phương, chúng tôi sẽ tiếp thêm năng lượng...",
-    "content": [
-      "Tại KGS Tech, chúng tôi muốn làm cho công nghệ trở nên bền vững.",
-      "Với suy nghĩ này, chúng tôi đang cố gắng truyền bá các giải pháp công nghệ tiên tiến.",
-      "Lý do cho điều này là chúng tôi nhận thấy giá trị của sự phát triển cộng đồng và tương lai."
-    ]
   },
   "ImgInfo": {
     "title": "KGS TECH VÀ NHỮNG ĐIỀU KHÁC BIỆT",
     "readmore": "Xem  thêm"
-  }
+  },
+  "BlogDetail": "Quay lại"
 }
