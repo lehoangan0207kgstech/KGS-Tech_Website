@@ -4,6 +4,7 @@ import Milestones from "../components/Milestones";
 import VideoBanner from "../components/VideoBanner";
 import PageDownUp from "../components/PageDownUp";
 import KgsMap from "../components/KgsMap";
+import Message from "../components/Message";
 import { motion } from "framer-motion"; // Import Framer Motion
 
 const Company = () => {
@@ -32,7 +33,14 @@ const Company = () => {
       <VideoBanner />
 
       {/* Scroll Indicator */}
-      <PageDownUp sections={["first-section", "mileStones", "leader", "kgsMap"]} label="Roll" icon="⬇" />
+      <PageDownUp
+        sections={["first-section", "mileStones", "leader", "kgsMap"]}
+        label="Roll"
+        icon="⬇"
+      />
+
+      {/* Thông điệp của sếp */}
+      <Message />
 
       {/* Giá trị cốt lõi */}
       <motion.div
@@ -76,10 +84,11 @@ const Company = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-6 py-3 border-2 rounded-full font-bold transition-all duration-300 ${activeTab === tab
-                ? "bg-secondary text-white border-secondary shadow-lg scale-105"
-                : "bg-white text-secondary border-secondary hover:bg-secondary hover:text-white"
-                }`}
+              className={`px-6 py-3 border-2 rounded-full font-bold transition-all duration-300 ${
+                activeTab === tab
+                  ? "bg-secondary text-white border-secondary shadow-lg scale-105"
+                  : "bg-white text-secondary border-secondary hover:bg-secondary hover:text-white"
+              }`}
             >
               {t(`vision.buttons.${tab}`)}
             </button>
@@ -160,7 +169,9 @@ const Company = () => {
                 alt={leader.name}
                 className="w-24 h-24 md:w-32 md:h-32 mx-auto rounded-full object-cover mb-4 shadow-md border-2 border-gray-300"
               />
-              <h3 className="text-lg md:text-xl font-bold text-secondary">{leader.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold text-secondary">
+                {leader.name}
+              </h3>
               <p className="text-gray-600 text-sm md:text-base">
                 {leader.position}
               </p>

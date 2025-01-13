@@ -14,7 +14,7 @@ const VideoBanner = () => {
   };
 
   return (
-    <div className="relative w-full h-[85vh] overflow-hidden flex items-center justify-center">
+    <div className="relative w-full h-[100vh] overflow-hidden flex items-center justify-center">
       {/* Video từ YouTube */}
       <ReactPlayer
         url="https://www.youtube.com/watch?v=W2FGWkDgFnw"

@@ -1,39 +1,53 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const Message = () => {
-    const { t } = useTranslation();
-
-    return (
-        <div
-            className="relative min-h-screen bg-cover bg-top text-white px-6 py-12 pt-40"
-            style={{
-                backgroundImage:
-                    "url('https://img.freepik.com/free-photo/trans-person-working-office-with-colleagues_23-2149287016.jpg?t=st=1736415820~exp=1736419420~hmac=839a563381cdfa84a93f6888d60619a017f9baa8f00104885fe1e061a3b6f8a2&w=1380')", // Đặt URL hình ảnh thực tế tại đây
-                backgroundSize: "cover", // Đảm bảo ảnh phủ toàn bộ vùng
-                backgroundPosition: "center", // Căn giữa ảnh
-            }}
-        >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-90"></div>
-
-            {/* Content */}
-            <div className="relative z-10 max-w-5xl mx-auto text-center">
-                <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-secondary">
-                    {t("message.title")}
-                </h1>
-                <h2 className="text-3xl font-extrabold text-center mb-8 text-accent">
-                    {t("message.subtitle")}
-                </h2>
-
-                <div className="text-base md:text-lg leading-relaxed space-y-6 text-left font-beVietnam pt-20">
-                    {t("message.content", { returnObjects: true }).map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                    ))}
-                </div>
-            </div>
+  return (
+    <div className="bg-white py-16 px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        {/* Phần nội dung thông điệp */}
+        <div className="text-gray-800">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-4">
+            THÔNG ĐIỆP
+          </h2>
+          <p className="italic text-lg text-center text-gray-600 mb-6">
+            Lời chào từ KGS Tech
+          </p>
+          <blockquote className="text-xl text-accent font-semibold mb-6">
+            "Mang những giá trị nguyên bản đến với mọi người và xây dựng một
+            tương lai bền vững, khởi nguồn từ thiên nhiên."
+          </blockquote>
+          <p className="text-gray-600 leading-relaxed mb-4">
+            Tại KGS Tech, chúng tôi luôn trân trọng những giá trị truyền thống
+            kết hợp với công nghệ hiện đại để tạo nên những sản phẩm thủ công
+            độc đáo, đặc biệt là dòng sản phẩm trà Ô Long và các đặc sản nổi bật
+            khác từ Đà Lạt. Sứ mệnh của chúng tôi không chỉ dừng lại ở việc tạo
+            ra sản phẩm chất lượng, mà còn là sự cam kết đối với cộng đồng và
+            môi trường.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Với đội ngũ giàu kinh nghiệm và lòng đam mê, KGS Tech mong muốn cùng
+            bạn viết tiếp câu chuyện đầy cảm hứng về những giá trị nguyên bản và
+            truyền thống lâu đời của Việt Nam, mang những nốt hương tinh túy ra
+            thế giới.
+          </p>
+          <p className="text-gray-800 text-left font-semibold mt-11">
+            Trân trọng, <br />
+            Nguyễn Văn A <br />
+            Giám đốc điều hành, KGS Tech
+          </p>
         </div>
-    );
+
+        {/* Phần hình ảnh */}
+        <div className="flex justify-center">
+          <img
+            src="https://img.freepik.com/free-photo/confident-male-mature-lawyer-sitting-office_23-2147898674.jpg?t=st=1736739597~exp=1736743197~hmac=359039da650f3274973788038db608b7f46adc363537d9818fc9027f22f9c1cd&w=740"
+            alt="Giám đốc điều hành KGS Tech"
+            className="rounded-lg shadow-md object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Message;

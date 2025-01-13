@@ -6,7 +6,9 @@ import Loading from "./Loading"; // Import Loading Component
 
 const Header = () => {
   const { t, i18n } = useTranslation();
-  const [language, setLanguage] = useState(localStorage.getItem("language") || "vi");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "vi"
+  );
   const [headerStyle, setHeaderStyle] = useState("primary");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false); // Trạng thái Loading
@@ -26,7 +28,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (location.pathname === "/" || location.pathname === "/company" || location.pathname === "/business") {
+    if (location.pathname === "/" || location.pathname === "/business") {
       const handleScroll = () => {
         const scrollY = window.scrollY;
         const imageHeight = 300;
@@ -56,7 +58,9 @@ const Header = () => {
 
       <header
         className={`fixed top-0 left-0 w-full z-30 transition-all duration-300 font-extrabold ${
-          headerStyle === "transparent" ? "bg-transparent text-white" : "bg-primary text-white shadow-md"
+          headerStyle === "transparent"
+            ? "bg-transparent text-white"
+            : "bg-primary text-white shadow-md"
         }`}
       >
         <div className="flex justify-between items-center px-3 py-3 md:px-8 md:py-4">
@@ -89,7 +93,7 @@ const Header = () => {
           {/* Menu Desktop */}
           <nav className="hidden md:flex gap-8">
             <ul className="flex gap-8">
-              {[ 
+              {[
                 { path: "/", label: t("header.home") },
                 { path: "/company", label: t("header.company") },
                 { path: "/business", label: t("header.business") },

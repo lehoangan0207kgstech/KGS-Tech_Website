@@ -25,14 +25,14 @@
     "copyright": "bản quyền này thuộc về Công Ty Cổ Phần KGS Tech"
   },
   "features": {
-    "whyChoose": "Tại sao chọn KGS Tech?",
+    "whyChoose": "TÁI SAO CHỌN KGS TECH ?",
     "strategicPartner": "Đối tác chiến lược",
     "comprehensiveSolutions": "Giải pháp toàn diện",
     "internationalWorkflow": "Quy trình chuẩn quốc tế",
     "largeProjects": "Dự án lớn và phức tạp"
   },
   "blog": {
-    "title": "Tin Tức & Bài Viết",
+    "title": "TIN TỨC VÀ BÀI VIẾT",
     "readMore": "Xem thêm",
     "posts": [
       {
@@ -70,7 +70,7 @@
     }
   },
   "milestones": {
-    "title": "Cột mốc chính",
+    "title": "CỘT MỐC CHÍNH",
     "items": [
       {
         "year": "Bây giờ",
@@ -93,7 +93,7 @@
     ]
   },
   "leaders": {
-    "title": "Ban lãnh đạo cấp cao",
+    "title": "BAN LÃNH ĐẠO CẤP CAO",
     "list": [
       {
         "name": "Sumimoto",
@@ -212,11 +212,11 @@
     "buttonText": "ĐĂNG KÝ"
   },
   "partners": {
-    "title": "Đối Tác Tin Cậy Của Chúng Tôi",
+    "title": "ĐỐI TÁC TIN CẬY CỦA CHÚNG TÔI",
     "description": "Các công ty công nghệ hàng đầu tại Việt Nam"
   },
   "reel": {
-    "title": "Hãy hạnh phúc với số nụ cười",
+    "title": "HÃY HẠNH PHÚC VỚI SỐ NỤ CƯỜI",
     "subtitle": "Công ty KGS Tech",
     "smileCount": "186,888,686人",
     "note": "※業自お好み焼売り上げ数"
@@ -233,5 +233,9 @@
       "Với suy nghĩ này, chúng tôi đang cố gắng truyền bá các giải pháp công nghệ tiên tiến.",
       "Lý do cho điều này là chúng tôi nhận thấy giá trị của sự phát triển cộng đồng và tương lai."
     ]
+  },
+  "ImgInfo": {
+    "title": "KGS TECH VÀ NHỮNG ĐIỀU KHÁC BIỆT",
+    "readmore": "Xem  thêm"
   }
 }
